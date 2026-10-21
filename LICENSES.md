@@ -16,6 +16,7 @@ Manba: https://github.com/google/fonts (ofl/…). Tijoratda bepul; shrift faylla
 `sweep_small.wav`, `air_woosh.wav`, `select_click.wav` — reel-montaj skill aktivlaridan (bepul SFX kutubxonalari: Mixkit/Pixabay uslubidagi
 royalty-free). Ommaviy nashrdan oldin manbasini qayta tekshiring.
 
-## Mijoz materiallari (MAXFIY)
-`example/`, `references/design-board/media/`, `references/brand_xina_siren_tahlil.md` — @xina_siren mijozining kadrlari, avatari,
-ovozi transkripti, telefon raqami va profil tahlili. Faqat shu repo egasi va mijoz bilan ishlash uchun; ommaviy qilmang.
+## Mijoz materiallari
+`example/`, `references/design-board/media/`, `references/brand-analysis/`, `references/brand_xina_siren_tahlil.md` — @xina_siren mijozining kadrlari,
+avatari, ovozi transkripti, telefon raqami va profil tahlili. Repo egasi qarori bilan ommaviy qilingan (2026-10-21); faqat namuna sifatida —
+bu kadrlar va brend materiallarini boshqa loyihada qayta ishlatmang. Yangi mijozda o'z materiallaringizni qo'ying.
