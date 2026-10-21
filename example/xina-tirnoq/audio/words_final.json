@@ -1,0 +1,662 @@
+[
+ {
+  "text": "Tirnoq",
+  "start": 0.06,
+  "end": 0.341,
+  "score": 0.745
+ },
+ {
+  "text": "tishlash",
+  "start": 0.401,
+  "end": 0.701,
+  "score": 0.96
+ },
+ {
+  "text": "odatimni",
+  "start": 0.821,
+  "end": 1.322,
+  "score": 0.991
+ },
+ {
+  "text": "17",
+  "start": 1.422,
+  "end": 1.763,
+  "score": 0.392
+ },
+ {
+  "text": "yoshimda",
+  "start": 1.763,
+  "end": 2.104,
+  "score": 0.885
+ },
+ {
+  "text": "tashlaganman,",
+  "start": 2.164,
+  "end": 2.865,
+  "score": 0.846
+ },
+ {
+  "text": "bunda",
+  "start": 2.965,
+  "end": 3.205,
+  "score": 0.989
+ },
+ {
+  "text": "menga",
+  "start": 3.246,
+  "end": 3.466,
+  "score": 0.762
+ },
+ {
+  "text": "yordam",
+  "start": 3.486,
+  "end": 3.807,
+  "score": 0.815
+ },
+ {
+  "text": "bergan",
+  "start": 3.807,
+  "end": 4.147,
+  "score": 0.767
+ },
+ {
+  "text": "layfxaklar",
+  "start": 4.287,
+  "end": 4.868,
+  "score": 0.567
+ },
+ {
+  "text": "bilan",
+  "start": 4.908,
+  "end": 5.129,
+  "score": 0.94
+ },
+ {
+  "text": "bo'lishmoqchiman.",
+  "start": 5.189,
+  "end": 5.85,
+  "score": 0.728
+ },
+ {
+  "text": "Birinchisi,",
+  "start": 6.202,
+  "end": 6.685,
+  "score": 0.954
+ },
+ {
+  "text": "bu",
+  "start": 6.745,
+  "end": 6.826,
+  "score": 0.971
+ },
+ {
+  "text": "tirnoqlaringizga",
+  "start": 6.926,
+  "end": 7.791,
+  "score": 0.384
+ },
+ {
+  "text": "halol",
+  "start": 7.931,
+  "end": 8.354,
+  "score": 0.501
+ },
+ {
+  "text": "manikyur",
+  "start": 8.414,
+  "end": 8.796,
+  "score": 0.638
+ },
+ {
+  "text": "qildiringlar.",
+  "start": 8.897,
+  "end": 9.52,
+  "score": 0.595
+ },
+ {
+  "text": "Manikyur",
+  "start": 9.65,
+  "end": 10.051,
+  "score": 0.516
+ },
+ {
+  "text": "qilingan,",
+  "start": 10.131,
+  "end": 10.672,
+  "score": 0.638
+ },
+ {
+  "text": "toza,",
+  "start": 10.873,
+  "end": 11.334,
+  "score": 0.828
+ },
+ {
+  "text": "kap-katta",
+  "start": 11.514,
+  "end": 12.095,
+  "score": 0.497
+ },
+ {
+  "text": "tirnoqlarni",
+  "start": 12.155,
+  "end": 12.856,
+  "score": 0.823
+ },
+ {
+  "text": "tishlashga",
+  "start": 13.217,
+  "end": 13.678,
+  "score": 0.836
+ },
+ {
+  "text": "ko'z",
+  "start": 13.758,
+  "end": 13.939,
+  "score": 0.787
+ },
+ {
+  "text": "qiymaydi.",
+  "start": 14.179,
+  "end": 14.62,
+  "score": 0.493
+ },
+ {
+  "text": "Yillar",
+  "start": 14.961,
+  "end": 15.341,
+  "score": 0.896
+ },
+ {
+  "text": "mobaynida",
+  "start": 15.401,
+  "end": 15.822,
+  "score": 0.817
+ },
+ {
+  "text": "tishlangan",
+  "start": 15.882,
+  "end": 16.343,
+  "score": 0.974
+ },
+ {
+  "text": "tirnoqlar",
+  "start": 16.383,
+  "end": 16.884,
+  "score": 0.878
+ },
+ {
+  "text": "mo'rt",
+  "start": 17.024,
+  "end": 17.285,
+  "score": 0.575
+ },
+ {
+  "text": "bo'lib",
+  "start": 17.345,
+  "end": 17.505,
+  "score": 0.815
+ },
+ {
+  "text": "qoladi,",
+  "start": 17.545,
+  "end": 17.846,
+  "score": 0.427
+ },
+ {
+  "text": "mo'rt",
+  "start": 17.926,
+  "end": 18.206,
+  "score": 0.527
+ },
+ {
+  "text": "tirnoqlarni",
+  "start": 18.246,
+  "end": 18.848,
+  "score": 0.896
+ },
+ {
+  "text": "tishlash",
+  "start": 19.088,
+  "end": 19.529,
+  "score": 0.871
+ },
+ {
+  "text": "osonroq.",
+  "start": 19.709,
+  "end": 20.19,
+  "score": 0.805
+ },
+ {
+  "text": "Tirnoqlaringiz",
+  "start": 20.521,
+  "end": 21.245,
+  "score": 0.594
+ },
+ {
+  "text": "mustahkamligiga",
+  "start": 21.325,
+  "end": 22.229,
+  "score": 0.868
+ },
+ {
+  "text": "e'tibor",
+  "start": 22.41,
+  "end": 22.792,
+  "score": 0.669
+ },
+ {
+  "text": "bersangiz,",
+  "start": 22.872,
+  "end": 23.274,
+  "score": 0.498
+ },
+ {
+  "text": "uni",
+  "start": 23.374,
+  "end": 23.515,
+  "score": 0.99
+ },
+ {
+  "text": "tishlashga",
+  "start": 23.575,
+  "end": 24.037,
+  "score": 0.973
+ },
+ {
+  "text": "qiynalasiz.",
+  "start": 24.137,
+  "end": 24.7,
+  "score": 0.737
+ },
+ {
+  "text": "Masalan,",
+  "start": 25.061,
+  "end": 25.522,
+  "score": 0.734
+ },
+ {
+  "text": "bir",
+  "start": 26.044,
+  "end": 26.164,
+  "score": 0.96
+ },
+ {
+  "text": "kunda",
+  "start": 26.224,
+  "end": 26.545,
+  "score": 0.779
+ },
+ {
+  "text": "10–15",
+  "start": 26.746,
+  "end": 27.367,
+  "score": 0.004
+ },
+ {
+  "text": "minut",
+  "start": 27.427,
+  "end": 27.668,
+  "score": 0.971
+ },
+ {
+  "text": "tuzli",
+  "start": 27.708,
+  "end": 27.949,
+  "score": 0.807
+ },
+ {
+  "text": "suvga",
+  "start": 27.989,
+  "end": 28.229,
+  "score": 0.949
+ },
+ {
+  "text": "botirib",
+  "start": 28.29,
+  "end": 28.61,
+  "score": 0.977
+ },
+ {
+  "text": "turing,",
+  "start": 28.651,
+  "end": 28.871,
+  "score": 0.93
+ },
+ {
+  "text": "yoki",
+  "start": 29.052,
+  "end": 29.433,
+  "score": 0.997
+ },
+ {
+  "text": "kalsiy,",
+  "start": 29.894,
+  "end": 30.335,
+  "score": 0.418
+ },
+ {
+  "text": "sink",
+  "start": 30.495,
+  "end": 30.756,
+  "score": 0.748
+ },
+ {
+  "text": "vitaminlarini",
+  "start": 30.816,
+  "end": 31.478,
+  "score": 0.864
+ },
+ {
+  "text": "ichishni",
+  "start": 31.558,
+  "end": 31.819,
+  "score": 0.58
+ },
+ {
+  "text": "unutmang.",
+  "start": 31.859,
+  "end": 32.24,
+  "score": 0.532
+ },
+ {
+  "text": "Uchinchisi",
+  "start": 32.541,
+  "end": 32.982,
+  "score": 0.847
+ },
+ {
+  "text": "esa,",
+  "start": 33.002,
+  "end": 33.242,
+  "score": 0.995
+ },
+ {
+  "text": "tirnoqlaringizga",
+  "start": 33.483,
+  "end": 34.425,
+  "score": 0.669
+ },
+ {
+  "text": "xina",
+  "start": 34.686,
+  "end": 35.067,
+  "score": 0.85
+ },
+ {
+  "text": "qo'yib",
+  "start": 35.167,
+  "end": 35.467,
+  "score": 0.38
+ },
+ {
+  "text": "yuring,",
+  "start": 35.487,
+  "end": 35.768,
+  "score": 0.921
+ },
+ {
+  "text": "chunki",
+  "start": 35.808,
+  "end": 36.169,
+  "score": 0.778
+ },
+ {
+  "text": "o'sgan",
+  "start": 36.369,
+  "end": 36.71,
+  "score": 0.61
+ },
+ {
+  "text": "tirnoqlaringiz",
+  "start": 36.77,
+  "end": 37.552,
+  "score": 0.713
+ },
+ {
+  "text": "ko'zingizga",
+  "start": 37.612,
+  "end": 38.033,
+  "score": 0.55
+ },
+ {
+  "text": "ko'rinmasa,",
+  "start": 38.174,
+  "end": 38.775,
+  "score": 0.678
+ },
+ {
+  "text": "uni",
+  "start": 39.156,
+  "end": 39.316,
+  "score": 0.998
+ },
+ {
+  "text": "tishlashni",
+  "start": 39.376,
+  "end": 39.857,
+  "score": 0.982
+ },
+ {
+  "text": "unutib",
+  "start": 40.158,
+  "end": 40.439,
+  "score": 0.78
+ },
+ {
+  "text": "qo'yasiz.",
+  "start": 40.479,
+  "end": 40.9,
+  "score": 0.87
+ },
+ {
+  "text": "Xina",
+  "start": 41.311,
+  "end": 41.532,
+  "score": 0.806
+ },
+ {
+  "text": "esa",
+  "start": 41.612,
+  "end": 41.813,
+  "score": 0.667
+ },
+ {
+  "text": "o'sgan",
+  "start": 42.214,
+  "end": 42.515,
+  "score": 0.561
+ },
+ {
+  "text": "tirnoqlaringizni",
+  "start": 42.555,
+  "end": 43.297,
+  "score": 0.547
+ },
+ {
+  "text": "bekitib",
+  "start": 43.418,
+  "end": 43.779,
+  "score": 0.885
+ },
+ {
+  "text": "turadi.",
+  "start": 43.819,
+  "end": 44.14,
+  "score": 0.882
+ },
+ {
+  "text": "Bundan",
+  "start": 44.431,
+  "end": 44.711,
+  "score": 0.631
+ },
+ {
+  "text": "tashqari,",
+  "start": 44.751,
+  "end": 45.172,
+  "score": 0.928
+ },
+ {
+  "text": "xina",
+  "start": 45.533,
+  "end": 45.873,
+  "score": 0.784
+ },
+ {
+  "text": "tirnoqlaringizni",
+  "start": 46.013,
+  "end": 46.755,
+  "score": 0.612
+ },
+ {
+  "text": "mustahkamlab,",
+  "start": 46.935,
+  "end": 47.857,
+  "score": 0.796
+ },
+ {
+  "text": "yaxshi",
+  "start": 48.017,
+  "end": 48.378,
+  "score": 0.97
+ },
+ {
+  "text": "o'sishiga",
+  "start": 48.478,
+  "end": 48.859,
+  "score": 0.793
+ },
+ {
+  "text": "yordam",
+  "start": 48.939,
+  "end": 49.299,
+  "score": 0.798
+ },
+ {
+  "text": "beradi.",
+  "start": 49.36,
+  "end": 49.6,
+  "score": 0.63
+ },
+ {
+  "text": "Tirnoq",
+  "start": 49.861,
+  "end": 50.182,
+  "score": 0.722
+ },
+ {
+  "text": "parvarishi",
+  "start": 50.243,
+  "end": 50.664,
+  "score": 0.693
+ },
+ {
+  "text": "haqidagi",
+  "start": 50.684,
+  "end": 51.126,
+  "score": 0.859
+ },
+ {
+  "text": "ma'lumotlar",
+  "start": 51.186,
+  "end": 51.728,
+  "score": 0.798
+ },
+ {
+  "text": "sizga",
+  "start": 51.768,
+  "end": 51.989,
+  "score": 0.995
+ },
+ {
+  "text": "qiziq",
+  "start": 52.069,
+  "end": 52.27,
+  "score": 0.963
+ },
+ {
+  "text": "bo'lsa,",
+  "start": 52.31,
+  "end": 52.571,
+  "score": 0.878
+ },
+ {
+  "text": "sahifamga",
+  "start": 52.812,
+  "end": 53.535,
+  "score": 0.888
+ },
+ {
+  "text": "obuna",
+  "start": 53.776,
+  "end": 54.016,
+  "score": 0.621
+ },
+ {
+  "text": "bo'lib",
+  "start": 54.057,
+  "end": 54.197,
+  "score": 0.357
+ },
+ {
+  "text": "qo'yishni",
+  "start": 54.277,
+  "end": 54.578,
+  "score": 0.723
+ },
+ {
+  "text": "unutmang.",
+  "start": 54.659,
+  "end": 55.0,
+  "score": 0.617
+ },
+ {
+  "text": "Bu",
+  "start": 55.271,
+  "end": 55.351,
+  "score": 0.999
+ },
+ {
+  "text": "videoni",
+  "start": 55.431,
+  "end": 55.872,
+  "score": 0.992
+ },
+ {
+  "text": "tirnog'ini",
+  "start": 55.992,
+  "end": 56.474,
+  "score": 0.974
+ },
+ {
+  "text": "tishlaydigan",
+  "start": 56.534,
+  "end": 57.175,
+  "score": 0.861
+ },
+ {
+  "text": "do'stingizga",
+  "start": 57.235,
+  "end": 57.656,
+  "score": 0.601
+ },
+ {
+  "text": "yuborib",
+  "start": 57.797,
+  "end": 58.158,
+  "score": 0.605
+ },
+ {
+  "text": "qo'yishni",
+  "start": 58.198,
+  "end": 58.498,
+  "score": 0.423
+ },
+ {
+  "text": "unutmang.",
+  "start": 58.538,
+  "end": 58.899,
+  "score": 0.497
+ }
+]

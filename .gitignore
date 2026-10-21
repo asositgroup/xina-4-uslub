@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.DS_Store
+example/**/hf_*/
+example/**/out/
+example/**/src/
+example/**/renders/
+example/**/*.wav
+example/**/*.mp4
+example/**/assets/base*.mp4

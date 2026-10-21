@@ -1,0 +1,582 @@
+[
+ {
+  "text": "Tırnak",
+  "start": 0.0,
+  "end": 0.24
+ },
+ {
+  "text": "tishlash",
+  "start": 0.24,
+  "end": 0.62
+ },
+ {
+  "text": "adatimni",
+  "start": 0.62,
+  "end": 1.22
+ },
+ {
+  "text": "onetke",
+  "start": 1.22,
+  "end": 1.68
+ },
+ {
+  "text": "ushinda",
+  "start": 1.68,
+  "end": 2.0
+ },
+ {
+  "text": "taj",
+  "start": 2.0,
+  "end": 2.26
+ },
+ {
+  "text": "agenman,",
+  "start": 2.26,
+  "end": 2.72
+ },
+ {
+  "text": "bunda",
+  "start": 2.78,
+  "end": 3.16
+ },
+ {
+  "text": "mangi",
+  "start": 3.16,
+  "end": 3.38
+ },
+ {
+  "text": "yorda",
+  "start": 3.38,
+  "end": 3.68
+ },
+ {
+  "text": "maryan",
+  "start": 3.68,
+  "end": 4.08
+ },
+ {
+  "text": "lag",
+  "start": 4.08,
+  "end": 4.36
+ },
+ {
+  "text": "-laglar",
+  "start": 4.36,
+  "end": 4.8
+ },
+ {
+  "text": "bulan",
+  "start": 4.8,
+  "end": 5.06
+ },
+ {
+  "text": "boshumak",
+  "start": 5.06,
+  "end": 5.52
+ },
+ {
+  "text": "chiman.",
+  "start": 5.52,
+  "end": 5.8
+ },
+ {
+  "text": "Birintisi,",
+  "start": 5.88,
+  "end": 6.58
+ },
+ {
+  "text": "bu",
+  "start": 6.64,
+  "end": 6.76
+ },
+ {
+  "text": "tırnaklari",
+  "start": 6.76,
+  "end": 7.38
+ },
+ {
+  "text": "gari",
+  "start": 7.38,
+  "end": 7.62
+ },
+ {
+  "text": "xa",
+  "start": 7.62,
+  "end": 8.02
+ },
+ {
+  "text": "do",
+  "start": 8.02,
+  "end": 8.16
+ },
+ {
+  "text": "manikur",
+  "start": 8.16,
+  "end": 8.74
+ },
+ {
+  "text": "kundar",
+  "start": 8.74,
+  "end": 9.02
+ },
+ {
+  "text": "giliylar.",
+  "start": 9.02,
+  "end": 9.46
+ },
+ {
+  "text": "Manikur",
+  "start": 9.54,
+  "end": 9.98
+ },
+ {
+  "text": "kilinga,",
+  "start": 9.98,
+  "end": 10.56
+ },
+ {
+  "text": "taza,",
+  "start": 10.58,
+  "end": 11.2
+ },
+ {
+  "text": "cap",
+  "start": 11.32,
+  "end": 11.62
+ },
+ {
+  "text": "-tetata",
+  "start": 11.62,
+  "end": 11.98
+ },
+ {
+  "text": "tırnaklari",
+  "start": 11.98,
+  "end": 12.72
+ },
+ {
+  "text": "tishlanski",
+  "start": 12.72,
+  "end": 13.58
+ },
+ {
+  "text": "gozilak",
+  "start": 13.58,
+  "end": 14.12
+ },
+ {
+  "text": "giliyla.",
+  "start": 14.12,
+  "end": 14.56
+ },
+ {
+  "text": "Ilar",
+  "start": 14.7,
+  "end": 15.2
+ },
+ {
+  "text": "mobayinda",
+  "start": 15.2,
+  "end": 15.74
+ },
+ {
+  "text": "tishlangan",
+  "start": 15.74,
+  "end": 16.14
+ },
+ {
+  "text": "tırnaklar",
+  "start": 16.14,
+  "end": 16.8
+ },
+ {
+  "text": "mord",
+  "start": 16.8,
+  "end": 17.22
+ },
+ {
+  "text": "podkidat,",
+  "start": 17.22,
+  "end": 17.72
+ },
+ {
+  "text": "mord",
+  "start": 17.78,
+  "end": 18.1
+ },
+ {
+  "text": "tırnaklarisi",
+  "start": 18.1,
+  "end": 18.84
+ },
+ {
+  "text": "tishlash",
+  "start": 18.84,
+  "end": 19.46
+ },
+ {
+  "text": "asamraq.",
+  "start": 19.46,
+  "end": 19.86
+ },
+ {
+  "text": "Tırnaklarisi",
+  "start": 20.26,
+  "end": 21.06
+ },
+ {
+  "text": "mustaq",
+  "start": 21.06,
+  "end": 21.58
+ },
+ {
+  "text": "camligiye",
+  "start": 21.58,
+  "end": 22.16
+ },
+ {
+  "text": "etibad",
+  "start": 22.16,
+  "end": 22.68
+ },
+ {
+  "text": "bersiz,",
+  "start": 22.68,
+  "end": 23.18
+ },
+ {
+  "text": "unu",
+  "start": 23.24,
+  "end": 23.46
+ },
+ {
+  "text": "tishlashgiye",
+  "start": 23.46,
+  "end": 24.0
+ },
+ {
+  "text": "qinalasiz.",
+  "start": 24.0,
+  "end": 24.68
+ },
+ {
+  "text": "Qasalan,",
+  "start": 24.74,
+  "end": 25.34
+ },
+ {
+  "text": "bir",
+  "start": 25.52,
+  "end": 26.08
+ },
+ {
+  "text": "kunda",
+  "start": 26.08,
+  "end": 26.4
+ },
+ {
+  "text": "10",
+  "start": 26.4,
+  "end": 26.76
+ },
+ {
+  "text": "-15",
+  "start": 26.76,
+  "end": 27.26
+ },
+ {
+  "text": "minut",
+  "start": 27.26,
+  "end": 27.52
+ },
+ {
+  "text": "tuzli",
+  "start": 27.52,
+  "end": 27.84
+ },
+ {
+  "text": "suge",
+  "start": 27.84,
+  "end": 28.12
+ },
+ {
+  "text": "batrik",
+  "start": 28.12,
+  "end": 28.52
+ },
+ {
+  "text": "turin.",
+  "start": 28.52,
+  "end": 28.78
+ },
+ {
+  "text": "ya",
+  "start": 28.78,
+  "end": 29.02
+ },
+ {
+  "text": "ki,",
+  "start": 29.02,
+  "end": 29.32
+ },
+ {
+  "text": "qaytisiz",
+  "start": 29.46,
+  "end": 30.3
+ },
+ {
+  "text": "tsimq",
+  "start": 30.3,
+  "end": 30.68
+ },
+ {
+  "text": "vitaminlarni",
+  "start": 30.68,
+  "end": 31.42
+ },
+ {
+  "text": "itchini",
+  "start": 31.42,
+  "end": 31.72
+ },
+ {
+  "text": "unutmayn.",
+  "start": 31.72,
+  "end": 32.16
+ },
+ {
+  "text": "Uchincisi",
+  "start": 32.26,
+  "end": 32.88
+ },
+ {
+  "text": "isa,",
+  "start": 32.88,
+  "end": 33.26
+ },
+ {
+  "text": "tırnaqlarizga",
+  "start": 33.26,
+  "end": 34.28
+ },
+ {
+  "text": "xinala",
+  "start": 34.28,
+  "end": 35.02
+ },
+ {
+  "text": "koyub",
+  "start": 35.02,
+  "end": 35.44
+ },
+ {
+  "text": "yurin,",
+  "start": 35.44,
+  "end": 35.7
+ },
+ {
+  "text": "chunki,",
+  "start": 35.72,
+  "end": 36.04
+ },
+ {
+  "text": "uzgenl",
+  "start": 36.14,
+  "end": 36.68
+ },
+ {
+  "text": "tırnaqlariz",
+  "start": 36.68,
+  "end": 37.52
+ },
+ {
+  "text": "pozizgi",
+  "start": 37.52,
+  "end": 37.96
+ },
+ {
+  "text": "korumansi",
+  "start": 37.96,
+  "end": 38.7
+ },
+ {
+  "text": "onu",
+  "start": 38.7,
+  "end": 39.14
+ },
+ {
+  "text": "tishlashliqan",
+  "start": 39.14,
+  "end": 39.96
+ },
+ {
+  "text": "unutup",
+  "start": 39.96,
+  "end": 40.38
+ },
+ {
+  "text": "koyasiz.",
+  "start": 40.38,
+  "end": 40.78
+ },
+ {
+  "text": "Xinalisi",
+  "start": 40.96,
+  "end": 41.8
+ },
+ {
+  "text": "uzgenl",
+  "start": 41.8,
+  "end": 42.5
+ },
+ {
+  "text": "tırnaqlarizdi",
+  "start": 42.5,
+  "end": 43.24
+ },
+ {
+  "text": "bekitib",
+  "start": 43.24,
+  "end": 43.72
+ },
+ {
+  "text": "tiraidat.",
+  "start": 43.72,
+  "end": 44.12
+ },
+ {
+  "text": "Bundan",
+  "start": 44.24,
+  "end": 44.64
+ },
+ {
+  "text": "dashkara,",
+  "start": 44.64,
+  "end": 45.04
+ },
+ {
+  "text": "xina",
+  "start": 45.24,
+  "end": 45.66
+ },
+ {
+  "text": "tırnaqlarizdan",
+  "start": 45.66,
+  "end": 46.72
+ },
+ {
+  "text": "muzdaq",
+  "start": 46.72,
+  "end": 47.28
+ },
+ {
+  "text": "gemlab,",
+  "start": 47.28,
+  "end": 47.72
+ },
+ {
+  "text": "yaxshi",
+  "start": 47.8,
+  "end": 48.3
+ },
+ {
+  "text": "uzishiga",
+  "start": 48.3,
+  "end": 48.78
+ },
+ {
+  "text": "yordab",
+  "start": 48.78,
+  "end": 49.2
+ },
+ {
+  "text": "verat.",
+  "start": 49.2,
+  "end": 49.54
+ },
+ {
+  "text": "Tırnaq",
+  "start": 49.66,
+  "end": 50.1
+ },
+ {
+  "text": "parvash",
+  "start": 50.1,
+  "end": 50.52
+ },
+ {
+  "text": "xaqadagi",
+  "start": 50.52,
+  "end": 51.0
+ },
+ {
+  "text": "mal",
+  "start": 51.0,
+  "end": 51.24
+ },
+ {
+  "text": "notlarsizga",
+  "start": 51.24,
+  "end": 51.9
+ },
+ {
+  "text": "qizq",
+  "start": 51.9,
+  "end": 52.2
+ },
+ {
+  "text": "bosa,",
+  "start": 52.2,
+  "end": 52.42
+ },
+ {
+  "text": "sahifamga",
+  "start": 52.62,
+  "end": 53.4
+ },
+ {
+  "text": "abonobob",
+  "start": 53.4,
+  "end": 54.14
+ },
+ {
+  "text": "qoyisni",
+  "start": 54.14,
+  "end": 54.48
+ },
+ {
+  "text": "unutmayn.",
+  "start": 54.48,
+  "end": 55.0
+ },
+ {
+  "text": "Bu",
+  "start": 55.02,
+  "end": 55.28
+ },
+ {
+  "text": "videonu",
+  "start": 55.28,
+  "end": 55.76
+ },
+ {
+  "text": "tırnaqini",
+  "start": 55.76,
+  "end": 56.38
+ },
+ {
+  "text": "tishli",
+  "start": 56.38,
+  "end": 56.7
+ },
+ {
+  "text": "digan",
+  "start": 56.7,
+  "end": 57.06
+ },
+ {
+  "text": "dozizgi",
+  "start": 57.06,
+  "end": 57.58
+ }
+]

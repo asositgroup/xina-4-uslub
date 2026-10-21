@@ -1,0 +1,846 @@
+<title>Xina Siren vizual tili</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Onest:wght@400;500;600;700&family=Pinyon+Script&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@500;600;700;800&family=Bodoni+Moda:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Jost:wght@300;400;500&family=Playfair+Display+SC:wght@400;700&family=Playfair+Display:ital,wght@1,600;1,700&family=JetBrains+Mono:wght@400;500&family=Archivo:wght@500;600;700&family=Caveat:wght@500;600;700&family=DM+Serif+Display&family=Karla:wght@500;700&display=swap">
+<style>
+/* Layout: a dark "screening room" — each design direction is a live 9:16 phone next to its spec sheet. Single deliberate dark look. */
+:root{
+  --bg:#141118; --panel:#1b1721; --panel-2:#221d29; --line:rgba(226,214,247,.12); --line-2:rgba(226,214,247,.22);
+  --fg:#efeaf6; --muted:#a99fb9; --accent:#c3a9f6; --henna:#c08458; --ok:#9fd8b3;
+  --display:'Young Serif', Georgia, 'Times New Roman', serif;
+  --body:'Onest', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --mono:'JetBrains Mono', ui-monospace, Menlo, monospace;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1160px;margin:0 auto;padding-inline:20px;padding-block:28px 80px}
+h1,h2,h3{font-family:var(--display);font-weight:400;text-wrap:balance;margin:0}
+h1{font-size:clamp(2.1rem,5vw,3.4rem);line-height:1.05;letter-spacing:-.01em}
+h2{font-size:clamp(1.55rem,3.2vw,2.2rem);line-height:1.12}
+h3{font-size:1.25rem;line-height:1.2}
+p{margin:0}
+.eyebrow{font-family:var(--mono);font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;color:var(--accent)}
+.muted{color:var(--muted)}
+a{color:var(--accent)}
+section{margin-top:64px}
+.sec-head{display:grid;gap:10px;margin-bottom:26px;max-width:760px}
+
+/* hero */
+.hero{display:grid;grid-template-columns:auto 1fr;gap:22px;align-items:center;margin-top:8px}
+.hero img{width:84px;height:84px;border-radius:50%;object-fit:cover;outline:2px solid var(--accent);outline-offset:4px}
+.hero .lead{max-width:720px;color:var(--muted);margin-top:10px;font-size:1.05rem}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:14px;overflow:hidden;margin-top:28px}
+.facts div{background:var(--panel);padding:14px 16px;min-width:0}
+.facts dt{font-size:.78rem;color:var(--muted)}
+.facts dd{margin:2px 0 0;font-weight:600}
+
+/* analysis */
+.cols{display:grid;grid-template-columns:1.15fr .85fr;gap:28px}
+.cols>*{min-width:0}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:22px}
+.reels{display:grid;gap:10px;margin-top:14px}
+.reel{display:grid;grid-template-columns:44px 1fr auto;gap:14px;align-items:center}
+.reel img{width:44px;height:78px;object-fit:cover;border-radius:6px}
+.reel .v{font-family:var(--mono);font-variant-numeric:tabular-nums;font-weight:500;text-align:right}
+.reel .t{font-weight:600;font-size:.95rem}
+.reel .n{font-size:.84rem;color:var(--muted)}
+.bar{height:4px;border-radius:2px;background:var(--line);margin-top:6px;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--accent)}
+.list{margin:12px 0 0;padding-left:1.1em;display:grid;gap:8px}
+.list li::marker{color:var(--accent)}
+.codes{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-top:14px}
+.code{display:grid;gap:8px}
+.code .sw{height:46px;border-radius:10px;border:1px solid var(--line-2)}
+.code b{font-size:.92rem}
+.code span{font-size:.82rem;color:var(--muted)}
+
+/* chosen video */
+.pick{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}
+.pick>*{min-width:0}
+.strip{display:grid;grid-template-columns:repeat(6,1fr);gap:6px}
+.strip figure{margin:0}
+.strip img{width:100%;aspect-ratio:9/16;object-fit:cover;border-radius:8px;display:block}
+.strip figcaption{font-family:var(--mono);font-size:.68rem;color:var(--muted);margin-top:4px}
+.beats{display:grid;gap:0;margin-top:4px;border-top:1px solid var(--line)}
+.beat{display:grid;grid-template-columns:74px 1fr;gap:12px;padding:9px 0;border-bottom:1px solid var(--line);font-size:.93rem}
+.beat .tc{font-family:var(--mono);color:var(--accent);font-size:.8rem;padding-top:2px;font-variant-numeric:tabular-nums}
+.why{display:grid;gap:8px;margin-top:16px}
+.pill{display:inline-block;font-family:var(--mono);font-size:.72rem;letter-spacing:.08em;padding:3px 9px;border-radius:999px;border:1px solid var(--line-2);color:var(--muted)}
+
+/* variants */
+.variant{display:grid;grid-template-columns:minmax(240px,330px) 1fr;gap:44px;padding:34px 0;border-top:1px solid var(--line)}
+.variant>*{min-width:0}
+.phone-col{display:grid;gap:10px;justify-items:center;align-content:start}
+.phone{width:100%;max-width:330px;padding:9px;border-radius:40px;background:#0a080c;box-shadow:0 30px 60px -20px rgba(0,0,0,.7),0 0 0 1px rgba(255,255,255,.06) inset}
+.screen{position:relative;width:100%;aspect-ratio:9/16;border-radius:31px;overflow:hidden;background:#000;isolation:isolate}
+.stage{position:absolute;left:0;top:0;width:1080px;height:1920px;transform-origin:0 0;overflow:hidden}
+.phone-cap{font-family:var(--mono);font-size:.72rem;color:var(--muted);text-align:center}
+.vhead{display:grid;grid-template-columns:auto 1fr;gap:16px;align-items:center}
+.letter{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;font-family:var(--display);font-size:1.5rem;border:1px solid var(--accent);color:var(--accent)}
+.vhead p{color:var(--muted);margin-top:4px}
+.idea{margin-top:16px;max-width:64ch}
+.sub-h{font-family:var(--mono);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:22px 0 10px}
+.pal{display:flex;flex-wrap:wrap;gap:10px}
+.chip{display:grid;grid-template-columns:34px auto;gap:2px 10px;align-items:center;padding:6px 12px 6px 6px;border-radius:12px;background:var(--panel-2);border:1px solid var(--line)}
+.chip i{grid-row:span 2;width:34px;height:34px;border-radius:8px;border:1px solid rgba(255,255,255,.18)}
+.chip b{font-size:.82rem;font-weight:600}
+.chip span{font-family:var(--mono);font-size:.7rem;color:var(--muted)}
+.specimen{display:grid;gap:6px;background:var(--panel-2);border:1px solid var(--line);border-radius:14px;padding:14px 16px}
+.specimen div{display:flex;justify-content:space-between;gap:16px;align-items:baseline;flex-wrap:wrap}
+.specimen small{font-family:var(--mono);font-size:.7rem;color:var(--muted)}
+.els{display:grid;grid-template-columns:120px 1fr;gap:8px 18px;margin:0}
+.els dt{font-weight:600;font-size:.9rem;color:var(--fg)}
+.els dd{margin:0;color:var(--muted);font-size:.93rem}
+.wow{margin-top:20px;padding:16px 18px;border-radius:14px;background:linear-gradient(135deg,rgba(195,169,246,.14),rgba(195,169,246,.04));border:1px solid rgba(195,169,246,.35)}
+.wow .eyebrow{display:block;margin-bottom:4px}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+
+/* recommendation */
+.rec{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.rec>*{min-width:0}
+.q{display:grid;gap:12px;counter-reset:q;margin:0;padding:0;list-style:none}
+.q li{display:grid;grid-template-columns:28px 1fr;gap:10px}
+.q li::before{counter-increment:q;content:counter(q);font-family:var(--mono);color:var(--accent);font-size:.85rem;padding-top:2px}
+.foot{margin-top:56px;color:var(--muted);font-size:.85rem}
+
+@media (max-width:860px){
+  .cols,.pick,.rec{grid-template-columns:1fr}
+  .variant{grid-template-columns:1fr;gap:26px}
+  .phone{max-width:300px}
+  .els{grid-template-columns:1fr;gap:2px 0}
+  .els dd{margin-bottom:8px}
+  .strip{grid-template-columns:repeat(3,1fr)}
+}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+
+/* ============ STAGE ELEMENTS (1080×1920 video coordinates) ============ */
+.stage .clip{position:absolute;inset:0;width:1080px;height:1920px;object-fit:cover}
+.stage .abs{position:absolute}
+.stage .veil{position:absolute;inset:0;z-index:50;pointer-events:none}
+.stage svg.layer{position:absolute;left:0;top:0;width:1080px;height:1920px;overflow:visible}
+.stage .sub{position:absolute;left:60px;right:60px;top:1300px;text-align:center;z-index:20}
+
+/* A — Xina chizig'i */
+.A .veil{background:#f3e7da}
+.A .a-title{left:80px;top:170px;z-index:10}
+.A .a-script{font-family:'Pinyon Script',cursive;font-size:210px;line-height:1.05;color:#2a150c;white-space:nowrap;display:inline-block;padding:0 30px 0 6px}
+.A .a-tip{position:absolute;left:0;width:26px;height:26px;border-radius:50%;background:radial-gradient(circle at 35% 35%,#7a5530,#2a150c 70%);box-shadow:0 4px 10px rgba(42,21,12,.45)}
+.A .a-kick{font-family:'Manrope',sans-serif;font-weight:800;font-size:30px;letter-spacing:.3em;color:#3b2416;margin-top:6px;padding-left:12px}
+.A .a-sub{font-family:'Manrope',sans-serif;font-weight:700;font-size:56px;color:#fff;text-shadow:0 2px 16px rgba(0,0,0,.5),0 0 2px rgba(0,0,0,.4)}
+.A .a-sub .u{background-image:linear-gradient(#c7aef7,#c7aef7);background-repeat:no-repeat;background-position:0 92%;background-size:0% 7px;padding-bottom:6px}
+.A .a-scrim{left:0;top:110px;width:1080px;height:620px;background:radial-gradient(70% 60% at 40% 45%,rgba(250,243,234,.9),rgba(250,243,234,.55) 55%,rgba(250,243,234,0) 78%);z-index:9}
+.A .a-info{left:90px;top:180px;z-index:10;color:#2a150c}
+.A .a-info h4{font-family:'Pinyon Script',cursive;font-weight:400;font-size:132px;line-height:1;margin:0 0 26px}
+.A .a-row{display:flex;align-items:center;gap:22px;font-family:'Manrope',sans-serif;font-weight:700;font-size:44px;margin:14px 0}
+.A .a-row .ic{display:block;width:46px;height:46px;flex:none}
+.A .a-row .ic svg{display:block;width:46px;height:46px}
+.A .a-sweep path{fill:none;stroke-linecap:round}
+
+/* B — Binafsha ipak */
+.B .veil{background:#1d0f2a}
+.B .clip{filter:saturate(.9) contrast(1.05)}
+.B .b-grade{position:absolute;inset:0;z-index:2;background:linear-gradient(180deg,rgba(29,15,42,.78) 0%,rgba(29,15,42,.15) 30%,rgba(29,15,42,0) 48%,rgba(29,15,42,.2) 62%,rgba(29,15,42,.86) 100%)}
+.B .b-mast{left:0;right:0;top:150px;text-align:center;z-index:10;font-family:'Bodoni Moda',serif;font-weight:500;font-size:138px;letter-spacing:.05em;color:#fff;text-shadow:0 0 40px rgba(205,182,255,.35)}
+.B .b-rule{left:330px;top:330px;width:420px;height:2px;background:linear-gradient(90deg,transparent,#efe8f7,transparent);z-index:10}
+.B .b-kick{left:0;right:0;top:362px;text-align:center;z-index:10;font-family:'Jost',sans-serif;font-weight:400;font-size:28px;letter-spacing:.44em;color:#efe8f7}
+.B .b-two{left:0;right:0;top:1150px;text-align:center;z-index:10;color:#fff}
+.B .b-two .l1,.B .b-two .l3{font-family:'Jost',sans-serif;font-weight:500;font-size:46px;letter-spacing:.02em}
+.B .b-two .l2{font-family:'Bodoni Moda',serif;font-style:italic;font-weight:500;font-size:118px;line-height:1.05;color:#d9c8ff}
+.B .b-silk{left:-1360px;top:-940px;width:3800px;height:3800px;z-index:30;pointer-events:none;
+  background:
+   repeating-linear-gradient(115deg,rgba(255,255,255,0) 0 90px,rgba(255,255,255,.07) 120px,rgba(80,40,140,.08) 170px,rgba(255,255,255,0) 210px),
+   linear-gradient(115deg,rgba(205,182,255,0) 0%,rgba(205,182,255,0) 17%,#e9ddff 24%,#a585e6 34%,#d7c4fb 44%,#7e5acb 54%,#cdb6ff 64%,#efe6ff 76%,rgba(239,230,255,0) 83%,rgba(239,230,255,0) 100%)}
+.B .b-sheen{left:-1360px;top:-940px;width:3800px;height:3800px;z-index:31;pointer-events:none;mix-blend-mode:screen;
+  background:linear-gradient(115deg,transparent 40%,rgba(255,255,255,.55) 48%,transparent 56%)}
+.B .b-num{left:0;right:0;top:170px;text-align:center;z-index:10;font-family:'Bodoni Moda',serif;font-style:italic;font-weight:400;font-size:300px;line-height:1;color:#d9c8ff;text-shadow:0 10px 50px rgba(29,15,42,.6)}
+.B .b-numlab{left:0;right:0;top:500px;text-align:center;z-index:10;font-family:'Jost',sans-serif;font-size:28px;letter-spacing:.42em;color:#efe8f7}
+.B .b-card{left:90px;top:1040px;width:900px;z-index:10;padding:46px 56px;border-radius:44px;background:rgba(255,255,255,.13);border:1.5px solid rgba(255,255,255,.38);-webkit-backdrop-filter:blur(24px) saturate(1.2);backdrop-filter:blur(24px) saturate(1.2);color:#fff;box-shadow:0 30px 80px rgba(20,8,32,.35)}
+.B .b-card h4{font-family:'Bodoni Moda',serif;font-style:italic;font-weight:500;font-size:68px;margin:0 0 18px;color:#efe6ff}
+.B .b-row{display:flex;gap:22px;align-items:center;font-family:'Jost',sans-serif;font-weight:400;font-size:42px;margin:12px 0}
+.B .b-row i{width:22px;height:22px;border-radius:50%;flex:none;background:radial-gradient(circle at 35% 30%,#fff,#e7dcf5 45%,#a998c4 100%);box-shadow:0 2px 6px rgba(0,0,0,.3)}
+
+/* C — Original pasport */
+.C .veil{background:#f6f3fb}
+.C .c-doc{left:0;top:0;width:1080px;height:470px;z-index:10;background:rgba(246,243,251,.94);box-shadow:0 18px 40px rgba(35,22,56,.18);overflow:hidden}
+.C .c-doc svg{position:absolute;inset:0;width:1080px;height:470px}
+.C .c-k{left:70px;top:66px;font-family:'Playfair Display SC',serif;font-weight:700;font-size:30px;letter-spacing:.32em;color:#2a1d44}
+.C .c-t{left:64px;top:104px;font-family:'Playfair Display',serif;font-style:italic;font-weight:700;font-size:116px;line-height:1.1;color:#231638}
+.C .c-n{left:70px;top:270px;font-family:'JetBrains Mono',monospace;font-size:26px;color:#5b4a80;letter-spacing:.04em}
+.C .c-n b{color:#231638;font-weight:500}
+.C .c-micro{left:0;top:432px;width:1080px;white-space:nowrap;overflow:hidden;font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.14em;color:rgba(42,29,68,.55)}
+.C .c-seal{left:64px;top:1080px;width:280px;height:280px;z-index:12}
+.C .c-holo{position:absolute;inset:0;border-radius:50%;background:conic-gradient(#ffd1f3,#c9b6ff,#9fe8ff,#c8ffd8,#fff0b3,#ffd1f3);-webkit-mask:radial-gradient(circle,transparent 0 96px,#000 97px);mask:radial-gradient(circle,transparent 0 96px,#000 97px);box-shadow:0 10px 30px rgba(35,22,56,.35)}
+.C .c-core{position:absolute;inset:92px;border-radius:50%;background:#231638}
+.C .c-seal svg{position:absolute;inset:0;width:280px;height:280px;overflow:visible}
+.C .c-strip{display:inline-block;background:#f6f3fb;color:#231638;font-family:'Archivo',sans-serif;font-weight:600;font-size:46px;padding:12px 28px 14px;border-radius:8px;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+.C .c-strip .x{position:relative;display:inline-block}
+.C .c-strip .x::after{content:"";position:absolute;left:-6px;right:-6px;top:52%;height:6px;background:#c23b3b;border-radius:3px;transform:scaleX(var(--k,0));transform-origin:left center}
+.C .c-strip .m{background-image:linear-gradient(rgba(140,111,208,.45),rgba(140,111,208,.45));background-repeat:no-repeat;background-size:0% 100%;padding:0 6px;border-radius:4px}
+.C .c-v2{position:absolute;inset:0;z-index:5}
+.C .c-tint{position:absolute;inset:0;background:rgba(84,40,210,.42);mix-blend-mode:multiply}
+.C .c-wm{position:absolute;left:0;right:0;top:640px;text-align:center;font-family:'Playfair Display',serif;font-style:italic;font-weight:700;font-size:520px;line-height:1;color:transparent;-webkit-text-stroke:3px rgba(214,196,255,.95);text-shadow:0 0 40px rgba(170,130,255,.9)}
+.C .c-bar{left:0;top:0;width:1080px;height:230px;z-index:8;mix-blend-mode:screen;background:linear-gradient(180deg,rgba(120,60,255,0) 0%,rgba(140,90,255,.5) 70%,rgba(235,222,255,.95) 93%,rgba(140,90,255,0) 100%)}
+.C .c-route{z-index:10}
+.C .c-lab{font-family:'JetBrains Mono',monospace;font-size:24px;color:#231638;text-shadow:0 0 12px rgba(255,255,255,.95),0 0 3px rgba(255,255,255,1)}
+.C .c-lab b{display:block;font-family:'Playfair Display SC',serif;font-weight:700;font-size:34px;letter-spacing:.12em}
+.C .c-km{font-family:'Playfair Display',serif;font-style:italic;font-weight:700;font-size:76px;color:#231638;text-shadow:0 0 16px rgba(255,255,255,.95)}
+
+/* D — Yasmina kundaligi */
+.D .veil{background:#efe7da}
+.D .v1{filter:sepia(.14) saturate(.95)}
+.D .paper{background-color:#fbf7ef;background-image:var(--noise)}
+.D .d-note{left:60px;top:120px;width:700px;height:300px;z-index:10;transform:rotate(-2.5deg);box-shadow:0 18px 40px rgba(40,28,20,.28);padding:48px 44px 0}
+.D .d-tape{left:220px;top:88px;width:300px;height:64px;z-index:11;transform:rotate(3.5deg);background:repeating-linear-gradient(135deg,rgba(184,163,232,.82) 0 18px,rgba(200,183,240,.82) 18px 36px);box-shadow:0 2px 6px rgba(0,0,0,.12)}
+.D .hand{font-family:'Caveat',cursive;color:#2c2433;line-height:1.05}
+.D .d-h1{font-size:64px;font-weight:700}
+.D .d-h2{font-size:58px;font-weight:600;color:#5b4b78;margin-top:10px}
+.D .d-stamp{left:640px;top:70px;width:200px;height:200px;z-index:12;border-radius:50%;border:5px solid #b23a48;color:#b23a48;display:grid;place-items:center;text-align:center;font-family:'JetBrains Mono',monospace;font-size:24px;font-weight:500;line-height:1.3;background:rgba(251,247,239,.35)}
+.D .d-stamp::before{content:"";position:absolute;inset:10px;border-radius:50%;border:2px dashed rgba(178,58,72,.7)}
+.D .d-sub{font-family:'Karla',sans-serif;font-weight:700;font-size:52px;color:#fff;text-shadow:0 2px 16px rgba(0,0,0,.55)}
+.D .d-sub .h{font-family:'Caveat',cursive;font-weight:700;font-size:78px;color:#d9c8ff;margin-left:8px}
+.D .d-tear{left:0;top:0;width:1080px;height:2400px;z-index:40;background-color:#efe7da;background-image:var(--noise);box-shadow:0 -10px 30px rgba(0,0,0,.25)}
+.D .d-col{position:absolute;inset:0;z-index:30;background-color:#efe7da;background-image:radial-gradient(circle,rgba(60,40,80,.16) 2.2px,transparent 2.6px),var(--noise);background-size:48px 48px,auto}
+.D .d-pol{left:150px;top:170px;width:780px;height:1000px;background:#fff;box-shadow:0 26px 50px rgba(40,28,20,.3);transform:rotate(-3deg)}
+.D .d-pol .win{position:absolute;left:30px;top:30px;width:720px;height:820px;overflow:hidden;background:#222}
+.D .d-pol video{width:720px;height:820px;object-fit:cover;filter:sepia(.1)}
+.D .d-pol .cap{position:absolute;left:40px;top:868px;font-family:'Caveat',cursive;font-weight:600;font-size:66px;color:#2c2433;white-space:nowrap}
+.D .d-ptape{left:420px;top:140px;width:240px;height:58px;transform:rotate(-6deg);background:repeating-linear-gradient(135deg,rgba(184,163,232,.82) 0 18px,rgba(200,183,240,.82) 18px 36px)}
+.D .d-pass{left:120px;top:1180px;width:800px;height:240px;transform:rotate(2deg);box-shadow:0 18px 36px rgba(40,28,20,.28);border-radius:18px;overflow:hidden;display:grid;grid-template-columns:1fr 150px}
+.D .d-pass .main{position:relative;padding:26px 34px;border-right:3px dashed rgba(44,36,51,.25)}
+.D .d-pass .band{position:absolute;left:0;top:0;right:0;height:16px;background:#b8a3e8}
+.D .d-pass .codes{display:flex;align-items:center;justify-content:space-between;margin-top:12px}
+.D .d-pass .iata{font-family:'DM Serif Display',serif;font-size:104px;line-height:1;color:#2c2433}
+.D .d-pass .mid{position:relative;flex:1;height:4px;margin:0 22px;background:repeating-linear-gradient(90deg,#2c2433 0 10px,transparent 10px 22px)}
+.D .d-pass .dot{position:absolute;top:-11px;left:0;width:26px;height:26px;border-radius:50%;background:#b8a3e8;border:4px solid #2c2433}
+.D .d-pass .lbl{font-family:'JetBrains Mono',monospace;font-size:20px;color:#5b4b78;letter-spacing:.08em;display:flex;justify-content:space-between}
+.D .d-pass .stub{display:grid;place-items:center;font-family:'JetBrains Mono',monospace;font-size:20px;color:#2c2433;text-align:center;line-height:1.5;padding-top:12px}
+</style>
+
+<div class="wrap">
+
+<header>
+  <div class="hero">
+    <img src="media/avatar.jpg" alt="@xina_siren profil rasmi">
+    <div>
+      <span class="eyebrow">@xina_siren · tahlil va dizayn taklifi · 16.10.2026</span>
+      <h1>Xina Siren uchun yangi vizual til</h1>
+    </div>
+  </div>
+  <p class="lead">Profilni to'liq ko'rib chiqdim: bio, 10 ta highlight, reels tabidagi 36 ta reelning ko'rishlar soni. 27 ta reelni kadrma-kadr (1 kadr/s) ko'rdim, 3 tasining nutqini transkripsiya qildim. Pastda xulosa, montaj uchun tanlangan video va 4 ta har xil dizayn yo'nalishi bor. Har yo'nalishning chap tomonidagi telefon sizning haqiqiy kadrlaringizda jonli ishlayapti.</p>
+  <dl class="facts">
+    <div><dt>Kim</dt><dd>Halol xina studiyasi, Toshkent</dd></div>
+    <div><dt>Asoschi</dt><dd>Yasmina · 8 yillik tajriba</dd></div>
+    <div><dt>Obunachi / post</dt><dd>155K · 1 847</dd></div>
+    <div><dt>Manzil</dt><dd>Yunusobod 17-kv, 8-A</dd></div>
+    <div><dt>Asosiy va'da</dt><dd>Original · suv o'tkazadi · tahorat o'tadi</dd></div>
+    <div><dt>O'z mahsuloti</dt><dd>Tirnoq xinasi, Misr · Uzum Market</dd></div>
+  </dl>
+</header>
+
+<section id="tahlil">
+  <div class="sec-head">
+    <span class="eyebrow">1 · Profil tahlili</span>
+    <h2>Nima qiladi, kimga, va nima ishlayapti</h2>
+    <p class="muted">Xizmatlar: manikyur + xina, pedikyur + dekor xina, qoshga xina va forma, osvitleniye, qosh va kiprik laminatsiyasi, qo'l naqshi, badan xinasi, qiz bazmlarida xina-party. Bundan tashqari «Xina san'ati» onlayn kursi, masterklass va o'z brendidagi original tirnoq xinasi. Auditoriya: o'zbek musulmon ayollar, kelinlar, dekretdagi yosh onalar. Asosiy tushuncha «halol»: xina suv o'tkazadi, shuning uchun tahorat o'tadi.</p>
+  </div>
+  <div class="cols">
+    <div class="card">
+      <h3>Reels: eng ko'p ko'rilganlar</h3>
+      <p class="muted" style="font-size:.9rem;margin-top:6px">Reels tabidagi 36 ta reelning medianasi 28.6K. Chiziq log-shkalada.</p>
+      <div class="reels">
+        <div class="reel"><img src="media/t_DdJpqDvqLt5.jpg" alt=""><div><div class="t">AI mini-qahramon tirnoqda ovqatlanadi</div><div class="n">Tirnoq salomatligi, vizual metafora, nutqsiz</div><div class="bar"><i style="width:100%"></i></div></div><div class="v">2.2M</div></div>
+        <div class="reel"><img src="media/t_DdYKjv6udgm.jpg" alt=""><div><div class="t">Qoshga forma, makro</div><div class="n">Oq pasta bilan chizilgan geometriya</div><div class="bar"><i style="width:77%"></i></div></div><div class="v">386K</div></div>
+        <div class="reel"><img src="media/t_Ddi2noIOcT0.jpg" alt=""><div><div class="t">Qosh xinasi, «Qo'rqaman» hook</div><div class="n">Makro + bitta katta so'z</div><div class="bar"><i style="width:70%"></i></div></div><div class="v">217K</div></div>
+        <div class="reel"><img src="media/t_DdWjkhvqGO6.jpg" alt=""><div><div class="t">Manikyur + xina, palirofka</div><div class="n">Tayyor natija, nafis yozuv</div><div class="bar"><i style="width:60%"></i></div></div><div class="v">105K</div></div>
+        <div class="reel"><img src="media/t_DePJ8OlO_7v.jpg" alt=""><div><div class="t">«Nega qizil xinani tavsiya qilmayman»</div><div class="n">Ekspert monolog, savol formatidagi hook</div><div class="bar"><i style="width:60%"></i></div></div><div class="v">99.4K</div></div>
+        <div class="reel"><img src="media/t_DeHIUmVImhw.jpg" alt=""><div><div class="t">«Halol laminatsiya» mijoz vlogi</div><div class="n">Hamkorlik, mijoz ko'zi bilan</div><div class="bar"><i style="width:58%"></i></div></div><div class="v">88.6K</div></div>
+        <div class="reel"><img src="media/t_Ddl9YKkKQ-E.jpg" alt=""><div><div class="t">Qo'l naqshini chizish jarayoni</div><div class="n">Xina konusi kadrda, chiziq jonli chiziladi</div><div class="bar"><i style="width:57%"></i></div></div><div class="v">79.1K</div></div>
+      </div>
+    </div>
+    <div style="display:grid;gap:20px;align-content:start;min-width:0">
+      <div class="card">
+        <h3>Xulosa</h3>
+        <ul class="list">
+          <li>Ko'rishlarni <b>chizilayotgan chiziq</b> olib keladi: qoshdagi oq geometriya, konusdan chiqayotgan xina. Jarayonni tomosha qilish yoqadi.</li>
+          <li>Eng katta hit (2.2M, medianadan 77 baravar ko'p) <b>tushunarli vizual metaforali</b> video. Ovozsiz ham tushuniladi.</li>
+          <li>Eng ko'p izoh (5 500) mahsulot hikoyasida: «original vs soxta» mavzusi auditoriyaga juda yaqin.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Hozirgi montajdagi bo'shliq</h3>
+        <ul class="list">
+          <li>Har reelda boshqa shrift, boshqa subtitr. Akkauntning yagona vizual tili yo'q.</li>
+          <li>Brendning binafsha rangi forma, qo'lqop va qadoqda bor, lekin grafikada deyarli ishlatilmaydi.</li>
+          <li>CTA ko'pincha profil skrinshoti. Yakuniy brend kartasi yo'q.</li>
+          <li>Xina san'atining o'zi (chiziq, naqsh, dog' rangi) hali dizayn elementiga aylanmagan.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="card" style="margin-top:20px">
+    <h3>Brendning tayyor vizual kodlari</h3>
+    <div class="codes">
+      <div class="code"><div class="sw" style="background:#9b7fe0"></div><b>Lavanda</b><span>Forma, qo'lqop, qadoq, sharlar</span></div>
+      <div class="code"><div class="sw" style="background:#24130c"></div><b>Xina izi</b><span>Qora-jigarrang chiziq, naqsh</span></div>
+      <div class="code"><div class="sw" style="background:linear-gradient(135deg,#efe9e4,#d9d1cb)"></div><b>Marmar devor</b><span>Studiya foni, oq-kulrang</span></div>
+      <div class="code"><div class="sw" style="background:linear-gradient(135deg,#f7efe8,#e7c9b5)"></div><b>Teri va marvarid</b><span>Qo'l, tirnoq, marvarid aksessuar</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="video">
+  <div class="sec-head">
+    <span class="eyebrow">2 · Montaj uchun video</span>
+    <h2>«Endi hech qachon poddelka xinaga aldanmaysiz»</h2>
+    <p class="muted">Original tirnoq xinasi sotuvga chiqqani haqidagi reel. 93 s, 16 400 layk, 5 500 izoh, 19.12.2025. Kadrlar deyarli yozuvsiz, 42-sekunddan Yasminaning ovozli hikoyasi bor.</p>
+  </div>
+  <div class="pick">
+    <div>
+      <div class="strip">
+        <figure><img src="media/p_0.5.jpg" alt="Yasmina qizil lentali qutilarni quchoqlaydi"><figcaption>0:00</figcaption></figure>
+        <figure><img src="media/p_12.3.jpg" alt="Misr, samolyot oldida selfi"><figcaption>0:12</figcaption></figure>
+        <figure><img src="media/p_22.jpg" alt="Hamkor bilan qo'l siqish"><figcaption>0:22</figcaption></figure>
+        <figure><img src="media/p_38.5.jpg" alt="Binafsha qadoqlar yaqindan"><figcaption>0:38</figcaption></figure>
+        <figure><img src="media/p_69.jpg" alt="Qutilar qadoqqa to'la"><figcaption>1:09</figcaption></figure>
+        <figure><img src="media/p_77.jpg" alt="Yasmina qutilar orasida qo'lini yoyadi"><figcaption>1:17</figcaption></figure>
+      </div>
+      <div class="why">
+        <span class="pill">NEGA AYNAN SHU VIDEO</span>
+        <ul class="list" style="margin-top:4px">
+          <li>Brendning eng muhim hikoyasi: o'z mahsuloti, Misr, 6 yil 9 oylik kurash, soxtaga qarshi.</li>
+          <li>Akkauntdagi eng yuqori izoh soni. Mavzu auditoriyaga eng yaqin.</li>
+          <li>Kadrlar toza va xilma-xil (studiya, aeroport, uchrashuv, qadoqlar dengizi), dizaynga joy ko'p.</li>
+        </ul>
+        <p class="muted" style="font-size:.9rem">Zaxira variant: «Nega qizil xinani tavsiya qilmayman» (99.4K). Lekin unda so'zlar kadrga kuydirilgan, ularni toza olib tashlab bo'lmaydi.</p>
+      </div>
+    </div>
+    <div class="card">
+      <h3>Hikoya bo'g'inlari (manba vaqti)</h3>
+      <div class="beats">
+        <div class="beat"><span class="tc">0:00–0:10</span><span>Qizil lentali qutilar, Yasmina quvonadi. Manbadagi «6 YIL» qora kartasi o'rniga yangi hook qo'yiladi.</span></div>
+        <div class="beat"><span class="tc">0:11–0:27</span><span>Misr: aeroport, hamkor bilan uchrashuv, kelishuv.</span></div>
+        <div class="beat"><span class="tc">0:28–0:40</span><span>Lentalar yechiladi, birinchi binafsha qadoqlar.</span></div>
+        <div class="beat"><span class="tc">0:42–1:10</span><span>Ovoz: «O'zbekistonga olib kelish umuman oson bo'lmadi… kutganimizdan 2 barobar ko'p olib keldik… eng qiyini kargo bo'ldi».</span></div>
+        <div class="beat"><span class="tc">1:10–1:27</span><span>Qadoqlar dengizi, Yasmina qo'lini yoyadi: «original tirnoq xinalari… endi hech qanaqa poddelkasi bo'lmaydi».</span></div>
+        <div class="beat"><span class="tc">yangi</span><span>Yakun kartasi: Xina Siren belgisi, Uzum Market, buyurtma uchun izohga «+».</span></div>
+      </div>
+      <p class="muted" style="margin-top:12px;font-size:.9rem">Rejadagi uzunlik 55–65 s. Manbadagi kuydirilgan qizil yozuv (1:25 dan) va «6 YIL» kartasi yangi dizayn bilan almashtiriladi.</p>
+    </div>
+  </div>
+</section>
+
+<section id="variantlar">
+  <div class="sec-head">
+    <span class="eyebrow">3 · Dizayn yo'nalishlari</span>
+    <h2>To'rtta yangi uslub, bir xil kadrlarda</h2>
+    <p class="muted">Har telefonda 8 soniyalik namuna: hook, subtitr, o'tish va infokarta. Kadrlar shu videodan, ovozsiz. Hamma harakat silliq: sakrash va «prujina» effekti yo'q, chiqishlar kamida 0.5 s, yozuvlar yuzga va Instagram tugmalari zonasiga tushmaydi.</p>
+  </div>
+
+  <!-- ===================== A ===================== -->
+  <article class="variant" id="A">
+    <div class="phone-col">
+      <div class="phone"><div class="screen"><div class="stage A" data-v="A">
+        <video class="clip v1" src="media/hook.mp4" poster="media/p_0.5.jpg" muted playsinline loop preload="auto"></video>
+        <video class="clip v2" src="media/sachet.mp4" poster="media/p_38.5.jpg" muted playsinline loop preload="auto"></video>
+        <svg class="layer a-vine" viewBox="0 0 1080 1920" style="z-index:8">
+          <g fill="none" stroke="#2a150c" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+            <path class="dr" d="M70 560 C150 640 20 720 95 800 S175 960 90 1040 S20 1190 105 1270"/>
+            <path class="dr" d="M118 690 C160 668 195 680 204 712 C172 722 140 717 118 690 Z"/>
+            <path class="dr" d="M95 800 C140 770 185 785 196 822 C160 835 120 830 95 800 Z"/>
+            <path class="dr" d="M70 925 C34 902 8 912 4 942 C30 954 56 948 70 925 Z"/>
+            <path class="dr" d="M90 1040 C130 1010 168 1022 176 1056 C142 1068 110 1062 90 1040 Z"/>
+            <path class="dr" d="M100 1165 C145 1140 180 1152 190 1185 C155 1196 122 1190 100 1165 Z"/>
+            <path class="dr" d="M105 1270 C160 1300 175 1370 130 1400 C95 1422 60 1395 75 1360 C88 1330 120 1335 118 1360"/>
+          </g>
+          <g fill="#2a150c" class="a-dots">
+            <circle cx="138" cy="578" r="7"/><circle cx="154" cy="604" r="6"/><circle cx="162" cy="632" r="5"/>
+            <circle cx="40" cy="760" r="6"/><circle cx="30" cy="790" r="5"/>
+            <circle cx="146" cy="980" r="6"/><circle cx="154" cy="1008" r="5"/>
+            <circle cx="56" cy="1110" r="6"/><circle cx="50" cy="1138" r="5"/>
+            <circle cx="160" cy="1250" r="6"/><circle cx="176" cy="1274" r="5"/>
+          </g>
+        </svg>
+        <div class="abs a-title">
+          <div class="a-script">Original</div>
+          <div class="a-tip"></div>
+          <div class="a-kick">TIRNOQ XINASI · MISRDAN</div>
+        </div>
+        <div class="sub a-sub s1">Axir bu uchun</div>
+        <div class="sub a-sub s2"><span class="u">6 yil 9 oy</span> kurashdim</div>
+        <div class="abs a-scrim"></div>
+        <div class="abs a-info">
+          <h4>Nega original?</h4>
+          <div class="a-row"><span class="ic"><svg viewBox="0 0 46 46"><circle cx="23" cy="23" r="7" fill="#2a150c"/><g fill="#2a150c"><circle cx="23" cy="6" r="3.4"/><circle cx="23" cy="40" r="3.4"/><circle cx="6" cy="23" r="3.4"/><circle cx="40" cy="23" r="3.4"/></g></svg></span>Suv o'tkazadi, tahorat o'tadi</div>
+          <div class="a-row"><span class="ic"><svg viewBox="0 0 46 46"><circle cx="23" cy="23" r="7" fill="#2a150c"/><g fill="#2a150c"><circle cx="23" cy="6" r="3.4"/><circle cx="23" cy="40" r="3.4"/><circle cx="6" cy="23" r="3.4"/><circle cx="40" cy="23" r="3.4"/></g></svg></span>Misrda ishlab chiqarilgan</div>
+          <div class="a-row"><span class="ic"><svg viewBox="0 0 46 46"><circle cx="23" cy="23" r="7" fill="#2a150c"/><g fill="#2a150c"><circle cx="23" cy="6" r="3.4"/><circle cx="23" cy="40" r="3.4"/><circle cx="6" cy="23" r="3.4"/><circle cx="40" cy="23" r="3.4"/></g></svg></span>Tirnoqda 1 oygacha qora</div>
+        </div>
+        <div class="sub a-sub s3">O'zbekistonga olib kelish</div>
+        <div class="sub a-sub s4">umuman <span class="u">oson bo'lmadi</span></div>
+        <svg class="layer a-sweep" viewBox="0 0 1080 1920" style="z-index:30">
+          <defs><linearGradient id="hennaG" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#4a2a16"/><stop offset=".5" stop-color="#24130c"/><stop offset="1" stop-color="#5a3420"/></linearGradient></defs>
+          <path class="sw" d="M-120 1760 C 240 1560 200 1120 540 960 S 900 520 1220 200" stroke="url(#hennaG)" stroke-width="96"/>
+        </svg>
+        <div class="veil"></div>
+      </div></div></div>
+      <div class="phone-cap">8 s namuna · ovozsiz · haqiqiy kadrlar</div>
+    </div>
+    <div>
+      <div class="vhead"><div class="letter">A</div><div><h2>Xina chizig'i</h2><p>Hamma grafika xina konusidan chiqqandek jonli chiziladi</p></div></div>
+      <p class="idea">Akkauntda eng ko'p ko'rilgan narsa — jonli chizilayotgan chiziq. Shu uslubda ekrandagi har bir element xuddi xina konusidan siqilgandek paydo bo'ladi. Chiziq avval yangi pasta rangida (zaytun-jigarrang), keyin ko'z oldida to'q dog' rangiga o'tadi. Haqiqiy xina ham shunday qorayadi. Bu boshqa hech bir brendda bo'lmagan, faqat xinaga xos imzo.</p>
+      <div class="sub-h">Palitra</div>
+      <div class="pal">
+        <div class="chip"><i style="background:#f3e7da"></i><b>Krem teri</b><span>#F3E7DA</span></div>
+        <div class="chip"><i style="background:#7d6a2e"></i><b>Yangi pasta</b><span>#7D6A2E</span></div>
+        <div class="chip"><i style="background:#2a150c"></i><b>Xina dog'i</b><span>#2A150C</span></div>
+        <div class="chip"><i style="background:#c7aef7"></i><b>Brend lavanda</b><span>#C7AEF7</span></div>
+      </div>
+      <div class="sub-h">Shriftlar</div>
+      <div class="specimen">
+        <div><span style="font-family:'Pinyon Script',cursive;font-size:2.1rem;line-height:1">Original xina</span><small>Pinyon Script · sarlavha</small></div>
+        <div><span style="font-family:'Cormorant Garamond',serif;font-weight:600;font-size:1.6rem">6 yil 9 oy</span><small>Cormorant Garamond · raqam</small></div>
+        <div><span style="font-family:'Manrope',sans-serif;font-weight:700;font-size:1.1rem">Suv o'tkazadi, tahorat o'tadi</span><small>Manrope · subtitr</small></div>
+      </div>
+      <div class="sub-h">Elementlar</div>
+      <dl class="els">
+        <dt>Hook</dt><dd>«Original» so'zi konus uchi bilan yoziladi va qorayib boradi.</dd>
+        <dt>Naqsh</dt><dd>Kadr chetidan barg-nuqta mehndi naqshi o'sib chiqib, muhim lahzani ramkaga oladi.</dd>
+        <dt>Subtitr</dt><dd>Oq Manrope, aksent so'z ostiga lavanda chiziq «quyiladi».</dd>
+        <dt>O'tish</dt><dd>Bitta qalin xina chizig'i ekranni kesib o'tadi, ortidan keyingi kadr chiqadi.</dd>
+        <dt>Infokarta</dt><dd>«Nega original?»: naqsh-nuqtali 3 qator.</dd>
+        <dt>Yakun</dt><dd>Chiziq «XS» monogrammasini chizadi, ostida Uzum Market va telefon raqami.</dd>
+      </dl>
+      <div class="wow"><span class="eyebrow">Wow lahza</span>«6 yil 9 oy» raqamlari nuqtali mehndi bilan chiziladi, so'ng naqsh butun kadrga yoyilib gulga aylanadi.</div>
+      <div class="meta"><span class="pill">Musiqa: sokin sharqona pad, oud</span><span class="pill">Seriya uchun mos</span></div>
+    </div>
+  </article>
+
+  <!-- ===================== B ===================== -->
+  <article class="variant" id="B">
+    <div class="phone-col">
+      <div class="phone"><div class="screen"><div class="stage B" data-v="B">
+        <video class="clip v1" src="media/hook.mp4" poster="media/p_0.5.jpg" muted playsinline loop preload="auto"></video>
+        <video class="clip v2" src="media/boxes.mp4" poster="media/p_69.jpg" muted playsinline loop preload="auto"></video>
+        <div class="b-grade"></div>
+        <div class="abs b-mast">XINA SIREN</div>
+        <div class="abs b-rule"></div>
+        <div class="abs b-kick">ORIGINAL · TIRNOQ XINASI</div>
+        <div class="abs b-two"><div class="l1">Endi hech qachon</div><div class="l2">poddelkaga</div><div class="l3">aldanmaysiz</div></div>
+        <div class="abs b-num">2×</div>
+        <div class="abs b-numlab">KUTILGANIDAN KO'P</div>
+        <div class="abs b-card">
+          <h4>Nega aynan original?</h4>
+          <div class="b-row"><i></i>Suv o'tkazadi, tahorat o'tadi</div>
+          <div class="b-row"><i></i>Misrda ishlab chiqarilgan</div>
+          <div class="b-row"><i></i>Tirnoqda 1 oygacha qora</div>
+        </div>
+        <div class="abs b-silk"></div>
+        <div class="abs b-sheen"></div>
+        <div class="veil"></div>
+      </div></div></div>
+      <div class="phone-cap">8 s namuna · ovozsiz · haqiqiy kadrlar</div>
+    </div>
+    <div>
+      <div class="vhead"><div class="letter">B</div><div><h2>Binafsha ipak</h2><p>Brend lavandasi lyuks go'zallik reklamasi darajasiga ko'tariladi</p></div></div>
+      <p class="idea">Lavanda forma, qo'lqop va qadoq allaqachon brendni tanitadi. Bu uslub uni jurnal muqovasi va qimmat kosmetika reklamasi tiliga olib chiqadi: yuqori kontrastli serif, ingichka marvarid chiziqlar, muzli shisha kartalar, kadrlar ustidan sirpanib o'tadigan lavanda ipak. Soyalarga yengil olxo'ri tusi beriladi, oq teri tabiiy qoladi.</p>
+      <div class="sub-h">Palitra</div>
+      <div class="pal">
+        <div class="chip"><i style="background:#1d0f2a"></i><b>Tun binafsha</b><span>#1D0F2A</span></div>
+        <div class="chip"><i style="background:#cdb6ff"></i><b>Ipak lavanda</b><span>#CDB6FF</span></div>
+        <div class="chip"><i style="background:#7e5acb"></i><b>Ametist</b><span>#7E5ACB</span></div>
+        <div class="chip"><i style="background:#efe8f7"></i><b>Marvarid</b><span>#EFE8F7</span></div>
+      </div>
+      <div class="sub-h">Shriftlar</div>
+      <div class="specimen">
+        <div><span style="font-family:'Bodoni Moda',serif;font-weight:500;font-size:1.8rem;letter-spacing:.04em">XINA SIREN</span><small>Bodoni Moda · masthead</small></div>
+        <div><span style="font-family:'Bodoni Moda',serif;font-style:italic;font-size:1.7rem;color:#d9c8ff">poddelkaga</span><small>Bodoni Moda Italic · aksent</small></div>
+        <div><span style="font-family:'Jost',sans-serif;font-size:1.05rem;letter-spacing:.3em">ORIGINAL · MISR</span><small>Jost · matn, CAPS</small></div>
+      </div>
+      <div class="sub-h">Elementlar</div>
+      <dl class="els">
+        <dt>Hook</dt><dd>Jurnal muqovasi: «XINA SIREN» masthead, marvarid chiziq, kichik CAPS satr.</dd>
+        <dt>Grade</dt><dd>Soyalarda binafsha-olxo'ri, highlight'lar iliq, teri tabiiy.</dd>
+        <dt>Subtitr</dt><dd>Ikki qavat: kichik Jost va katta kursiv Bodoni aksent so'z.</dd>
+        <dt>O'tish</dt><dd>Lavanda ipak mato ekran bo'ylab sirpanib, keyingi kadrni ochadi.</dd>
+        <dt>Infokarta</dt><dd>Muzli shisha karta, marvarid nuqtalar. «2×» katta kursiv raqam.</dd>
+        <dt>Yakun</dt><dd>Qadoqning «hero» kadri sekin aylanadi, ostida Uzum Market.</dd>
+      </dl>
+      <div class="wow"><span class="eyebrow">Wow lahza</span>Haqiqiy qadoqlar kadrdan qirqib olinadi va chuqurlik bilan sekin «yomg'ir» bo'lib tushadi: oldingi qatlam xira, o'rtasi aniq.</div>
+      <div class="meta"><span class="pill">Musiqa: lyuks ambient pianino</span><span class="pill">Eng «qimmat» ko'rinish</span></div>
+    </div>
+  </article>
+
+  <!-- ===================== C ===================== -->
+  <article class="variant" id="C">
+    <div class="phone-col">
+      <div class="phone"><div class="screen"><div class="stage C" data-v="C">
+        <video class="clip v1" src="media/hook.mp4" poster="media/p_0.5.jpg" muted playsinline loop preload="auto"></video>
+        <div class="c-v2">
+          <video class="clip v2" src="media/plane.mp4" poster="media/p_12.3.jpg" muted playsinline loop preload="auto"></video>
+          <div class="c-tint"></div>
+          <div class="c-wm">XS</div>
+          <svg class="layer c-route" viewBox="0 0 1080 1920">
+            <defs><mask id="routeMask" maskUnits="userSpaceOnUse" x="0" y="0" width="1080" height="1920"><path class="rm" d="M150 420 Q 540 40 930 230" fill="none" stroke="#fff" stroke-width="26"/></mask></defs>
+            <path class="rp" d="M150 420 Q 540 40 930 230" fill="none" stroke="#231638" stroke-width="7" stroke-linecap="round" stroke-dasharray="2 20" mask="url(#routeMask)"/>
+            <circle class="c-pa" cx="150" cy="420" r="13" fill="#231638"/>
+            <circle class="c-pb" cx="930" cy="230" r="13" fill="#231638"/>
+            <g class="c-plane"><path d="M-26 0 L22 0 M4 -18 L14 0 L4 18 M-20 -9 L-14 0 L-20 9" stroke="#231638" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" fill="none"/></g>
+          </svg>
+          <div class="abs c-lab c-la" style="left:90px;top:450px"><b>QOHIRA</b>30.04°N 31.24°E</div>
+          <div class="abs c-lab c-lb" style="left:735px;top:262px;text-align:right"><b>TOSHKENT</b>41.30°N 69.24°E</div>
+          <div class="abs c-km" style="left:400px;top:255px">3 620 km</div>
+        </div>
+        <div class="abs c-bar"></div>
+        <div class="abs c-doc">
+          <svg class="c-guil" viewBox="0 0 1080 470"></svg>
+          <div class="abs c-k">SERTIFIKAT · ORIGINAL</div>
+          <div class="abs c-t">Tirnoq xinasi</div>
+          <div class="abs c-n"><b>№ XS-2025-1219</b> · ISHLAB CHIQARILGAN: MISR</div>
+          <div class="abs c-micro">XINA SIREN • ORIGINAL • XINA SIREN • ORIGINAL • XINA SIREN • ORIGINAL • XINA SIREN • ORIGINAL • XINA SIREN • ORIGINAL • XINA SIREN • ORIGINAL • XINA SIREN • ORIGINAL •</div>
+        </div>
+        <div class="abs c-seal">
+          <div class="c-holo"></div>
+          <div class="c-core"></div>
+          <svg viewBox="0 0 280 280">
+            <defs><path id="ringP" d="M140 140 m-118 0 a118 118 0 1 1 236 0 a118 118 0 1 1 -236 0"/></defs>
+            <g class="c-ring"><text font-family="JetBrains Mono, monospace" font-size="19" font-weight="500" letter-spacing="3.2" fill="#231638"><textPath href="#ringP">ORIGINAL • XINA SIREN • MISR • 2025 • ORIGINAL •</textPath></text></g>
+            <path class="c-check" d="M108 142 L132 166 L176 116" fill="none" stroke="#cdb6ff" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="sub c-s1"><span class="c-strip">Endi hech qanaqa <span class="x">poddelkasi</span> bo'lmaydi</span></div>
+        <div class="sub c-s2"><span class="c-strip">Eng qiyini — <span class="m">kargo</span> bo'ldi</span></div>
+        <div class="veil"></div>
+      </div></div></div>
+      <div class="phone-cap">8 s namuna · ovozsiz · haqiqiy kadrlar</div>
+    </div>
+    <div>
+      <div class="vhead"><div class="letter">C</div><div><h2>Original pasport</h2><p>Video «haqiqiylik hujjati»ga aylanadi</p></div></div>
+      <p class="idea">Bu videoning butun mazmuni: soxta emas, original. Shuning uchun dizayn tili himoyalangan hujjatdan olinadi: banknotdagi ingichka gilosh naqshlar, seriya raqami, mikromatn, golografik muhr. Misr→Toshkent yo'li koordinatalar bilan aniq xarita bo'lib chiziladi. «Poddelka» so'zi ekranda qizil chiziq bilan o'chiriladi.</p>
+      <div class="sub-h">Palitra</div>
+      <div class="pal">
+        <div class="chip"><i style="background:#f6f3fb"></i><b>Hujjat qog'ozi</b><span>#F6F3FB</span></div>
+        <div class="chip"><i style="background:#231638"></i><b>Siyoh</b><span>#231638</span></div>
+        <div class="chip"><i style="background:#8c6fd0"></i><b>Gilosh lavanda</b><span>#8C6FD0</span></div>
+        <div class="chip"><i style="background:#c23b3b"></i><b>O'chirish qizil</b><span>#C23B3B</span></div>
+        <div class="chip"><i style="background:conic-gradient(#ffd1f3,#c9b6ff,#9fe8ff,#c8ffd8,#fff0b3,#ffd1f3)"></i><b>Gologramma</b><span>folga</span></div>
+      </div>
+      <div class="sub-h">Shriftlar</div>
+      <div class="specimen">
+        <div><span style="font-family:'Playfair Display SC',serif;font-weight:700;letter-spacing:.24em;font-size:1.05rem">SERTIFIKAT · ORIGINAL</span><small>Playfair Display SC</small></div>
+        <div><span style="font-family:'Playfair Display',serif;font-style:italic;font-weight:700;font-size:1.7rem">Tirnoq xinasi</span><small>Playfair Display Italic</small></div>
+        <div><span style="font-family:'JetBrains Mono',monospace;font-size:.95rem">№ XS-2025-1219 · 3 620 km</span><small>JetBrains Mono · seriya</small></div>
+        <div><span style="font-family:'Archivo',sans-serif;font-weight:600;font-size:1.1rem">Eng qiyini — kargo bo'ldi</span><small>Archivo · subtitr</small></div>
+      </div>
+      <div class="sub-h">Elementlar</div>
+      <dl class="els">
+        <dt>Hook</dt><dd>Hujjat sarlavhasi tepadan tushadi: «Sertifikat · Original», seriya raqami, gilosh naqsh.</dd>
+        <dt>Muhr</dt><dd>Kamalak-folga golografik muhr bosiladi, matn halqasi sekin aylanadi.</dd>
+        <dt>Subtitr</dt><dd>Oq qog'oz yorliqda siyoh matn. «Poddelka» qizil chiziq bilan o'chiriladi, kalit so'z lavanda marker bilan belgilanadi.</dd>
+        <dt>O'tish</dt><dd>UV-skaner: binafsha nur ekranni yuqoridan pastga tekshirib o'tadi.</dd>
+        <dt>Infografika</dt><dd>Qohira → Toshkent marshruti, koordinatalar, 3 620 km.</dd>
+        <dt>Yakun</dt><dd>«Original ✓ / Poddelka ✗» taqqoslash, Uzum Market, izohga «+».</dd>
+      </dl>
+      <div class="wow"><span class="eyebrow">Wow lahza</span>UV-skaner nuri qadoq ustidan o'tadi va banknot tekshirgandek yashirin «XS» suv belgisi yonib chiqadi. Original ekani isbotlanadi.</div>
+      <div class="meta"><span class="pill">Musiqa: minimal pulsli bed, ishonch</span><span class="pill">Shu video uchun tavsiyam</span></div>
+    </div>
+  </article>
+
+  <!-- ===================== D ===================== -->
+  <article class="variant" id="D">
+    <div class="phone-col">
+      <div class="phone"><div class="screen"><div class="stage D" data-v="D">
+        <video class="clip v1" src="media/hook.mp4" poster="media/p_0.5.jpg" muted playsinline loop preload="auto"></video>
+        <div class="abs d-note paper">
+          <div class="hand d-h1">6 yil 9 oy kurashdim.</div>
+          <div class="hand d-h2">Mana, ular keldi!</div>
+        </div>
+        <div class="abs d-tape"></div>
+        <div class="abs d-stamp">19·12<br>2025<br>XS</div>
+        <div class="sub d-sub d-s1">Ular nihoyat<span class="h">yetib keldi</span></div>
+        <div class="d-col">
+          <div class="abs d-pol"><div class="win"><video class="v2" src="media/deal.mp4" poster="media/p_22.jpg" muted playsinline loop preload="auto"></video></div><div class="cap">Qohira — kelishuv kuni</div></div>
+          <div class="abs d-ptape"></div>
+          <div class="abs d-pass paper">
+            <div class="main"><div class="band"></div>
+              <div class="lbl" style="margin-top:14px"><span>QOHIRA</span><span>TOSHKENT</span></div>
+              <div class="codes"><span class="iata">CAI</span><span class="mid"><span class="dot"></span></span><span class="iata">TAS</span></div>
+              <div class="lbl" style="margin-top:10px"><span>YO'LOVCHI: YASMINA</span><span>YUK: ORIGINAL XINA</span></div>
+            </div>
+            <div class="stub">XINA<br>SIREN<br>2025</div>
+          </div>
+        </div>
+        <div class="abs d-tear"></div>
+        <div class="veil"></div>
+      </div></div></div>
+      <div class="phone-cap">8 s namuna · ovozsiz · haqiqiy kadrlar</div>
+    </div>
+    <div>
+      <div class="vhead"><div class="letter">D</div><div><h2>Yasmina kundaligi</h2><p>Asoschining shaxsiy hikoyasi kundalik sahifalarida</p></div></div>
+      <p class="idea">Video aslida bitta ayolning 6 yil 9 oylik yo'li haqida. Bu uslub uni Yasminaning kundaligi sifatida ko'rsatadi: lavanda skotch bilan yopishtirilgan qo'lyozma eslatmalar, sana muhri, polaroid ichida jonli video, Qohira–Toshkent bortga chiqish taloni. Sahifalar yirtilib almashinadi. Iliq, samimiy, lekin bolalarcha emas: emoji va multfilm effektlari ishlatilmaydi.</p>
+      <div class="sub-h">Palitra</div>
+      <div class="pal">
+        <div class="chip"><i style="background:#efe7da"></i><b>Kundalik qog'ozi</b><span>#EFE7DA</span></div>
+        <div class="chip"><i style="background:#2c2433"></i><b>Siyoh</b><span>#2C2433</span></div>
+        <div class="chip"><i style="background:#b8a3e8"></i><b>Lavanda skotch</b><span>#B8A3E8</span></div>
+        <div class="chip"><i style="background:#b23a48"></i><b>Muhr qizil</b><span>#B23A48</span></div>
+      </div>
+      <div class="sub-h">Shriftlar</div>
+      <div class="specimen">
+        <div><span style="font-family:'Caveat',cursive;font-weight:700;font-size:1.9rem;line-height:1">6 yil 9 oy kurashdim</span><small>Caveat · qo'lyozma</small></div>
+        <div><span style="font-family:'DM Serif Display',serif;font-size:1.8rem">CAI → TAS</span><small>DM Serif Display · bilet</small></div>
+        <div><span style="font-family:'Karla',sans-serif;font-weight:700;font-size:1.1rem">Ular nihoyat yetib keldi</span><small>Karla · subtitr</small></div>
+      </div>
+      <div class="sub-h">Elementlar</div>
+      <dl class="els">
+        <dt>Hook</dt><dd>Kundalik varag'i skotch bilan yopishtiriladi, qo'lyozma matn yoziladi.</dd>
+        <dt>Muhr</dt><dd>Qizil sana muhri: 19·12·2025.</dd>
+        <dt>Subtitr</dt><dd>Oq Karla, aksent so'z lavanda qo'lyozmada.</dd>
+        <dt>O'tish</dt><dd>Qog'oz yirtilib, ostidan keyingi sahifa chiqadi.</dd>
+        <dt>Kollaj</dt><dd>Polaroid ichida jonli video, bortga chiqish taloni.</dd>
+        <dt>Yakun</dt><dd>Oxirgi sahifa: «Endi siz ham aldanmaysiz» va «Yasmina» imzosi.</dd>
+      </dl>
+      <div class="wow"><span class="eyebrow">Wow lahza</span>Bortga chiqish taloni chop etilib chiqadi. Uning ortida Misr kadrlari polaroidlarda birin-ketin «ochiladi».</div>
+      <div class="meta"><span class="pill">Musiqa: iliq akustik gitara yoki pianino</span><span class="pill">Eng samimiy</span></div>
+    </div>
+  </article>
+</section>
+
+<section id="tavsiya">
+  <div class="sec-head">
+    <span class="eyebrow">4 · Tavsiyam</span>
+    <h2>Shu video uchun C, akkaunt uchun A</h2>
+  </div>
+  <div class="rec">
+    <div class="card">
+      <h3>Nega</h3>
+      <ul class="list">
+        <li><b>C · Original pasport</b> videoning g'oyasini (soxta emas, original) dizaynning o'zi bilan isbotlaydi. UV-skaner va golografik muhr ovozsiz ham tushuniladi.</li>
+        <li><b>A · Xina chizig'i</b> doimiy brend tiliga eng mos: har reelda (qosh, qo'l naqshi, tirnoq) takrorlanib, akkauntni tanitadi.</li>
+        <li>Birlashtirish ham mumkin: C asosida, o'tish va yakun kartasi A ning xina chizig'i bilan.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Boshlashdan oldin tasdiqlash kerak</h3>
+      <ol class="q">
+        <li><span>Qaysi yo'nalish: A, B, C, D yoki aralash (masalan C + A)?</span></li>
+        <li><span>Video: «Endi hech qachon poddelka…» (tavsiya) yoki boshqasi?</span></li>
+        <li><span>Musiqa: manbadagi trek qoladimi, yangi sokin fon qo'yaymi yoki musiqani o'zingiz qo'shasizmi?</span></li>
+        <li><span>Yakun kartasi: telefon +998 33 712 26 07, Uzum Market va izohga «+» CTA qoladimi?</span></li>
+      </ol>
+    </div>
+  </div>
+  <p class="foot">Montaj vositalari: HyperFrames (GSAP kompozitsiya, 60 fps render), reel-montaj quvuri (transkript, grade, silliqlik tekshiruvi, IG xavfsiz zona), design-montaj element katalogi, hyperframes-audio miks. Barcha shriftlar Google Fonts (OFL), tijoratda bepul.</p>
+</section>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script>
+(function(){
+  var noise = "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='260' height='260'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .35  0 0 0 0 .28  0 0 0 0 .2  0 0 0 .09 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>\")";
+  document.querySelectorAll('.stage.D').forEach(function(s){ s.style.setProperty('--noise', noise); });
+
+  // scale each 1080×1920 stage into its phone screen
+  document.querySelectorAll('.screen').forEach(function(sc){
+    var st = sc.querySelector('.stage');
+    var fit = function(){ st.style.transform = 'scale(' + (sc.clientWidth/1080) + ')'; };
+    fit();
+    if (window.ResizeObserver) new ResizeObserver(fit).observe(sc); else window.addEventListener('resize', fit);
+  });
+
+  if (!window.gsap) return;
+  var IN = 'expo.out', IO = 'power2.inOut';
+  function restart(v){ try { v.currentTime = 0; var p = v.play(); if (p && p.catch) p.catch(function(){}); } catch(e){} }
+  function enter(tl, el, t, o){ o = o || {};
+    tl.fromTo(el, {opacity:0, y:(o.y==null?26:o.y), x:(o.x||0), scale:(o.s||1), rotation:(o.r0==null?0:o.r0), filter:'blur(' + (o.b==null?14:o.b) + 'px)'},
+                  {opacity:(o.op||1), y:0, x:0, scale:1, rotation:(o.r1==null?0:o.r1), filter:'blur(0px)', duration:(o.d||0.6), ease:(o.e||IN)}, t); }
+  function exit(tl, el, t, d){ tl.to(el, {opacity:0, filter:'blur(10px)', duration:d||0.5, ease:IO}, t); }
+  function veil(tl, st){ var v = st.querySelector('.veil');
+    tl.fromTo(v, {opacity:1}, {opacity:0, duration:0.5, ease:IO}, 0);
+    tl.to(v, {opacity:1, duration:0.5, ease:IO}, 7.5);
+    tl.to({}, {duration:0.001}, 7.999); }
+  function drawable(p){ var L = p.getTotalLength(); p.style.strokeDasharray = L; p.style.strokeDashoffset = L; return L; }
+
+  var builders = {
+    A: function(st){
+      var tl = gsap.timeline({repeat:-1, paused:true});
+      var v1 = st.querySelector('.v1'), v2 = st.querySelector('.v2');
+      tl.call(restart, [v1], 0); tl.set(v2, {opacity:0}, 0);
+      veil(tl, st);
+      var scr = st.querySelector('.a-script'), tip = st.querySelector('.a-tip');
+      var w = scr.offsetWidth - 30;
+      tip.style.top = (scr.offsetTop + scr.offsetHeight*0.6) + 'px';
+      tl.fromTo(scr, {clipPath:'inset(0% 100% 0% 0%)'}, {clipPath:'inset(0% 0% 0% 0%)', duration:1.6, ease:'power1.inOut'}, 0.3);
+      tl.fromTo(scr, {color:'#7d6a2e'}, {color:'#2a150c', duration:1.8, ease:'sine.inOut'}, 1.2);
+      tl.fromTo(tip, {x:0, opacity:0}, {x:w, duration:1.6, ease:'power1.inOut'}, 0.3);
+      tl.to(tip, {opacity:1, duration:0.3, ease:IO}, 0.3);
+      tl.to(tip, {opacity:0, duration:0.5, ease:IO}, 1.8);
+      enter(tl, st.querySelector('.a-kick'), 1.5, {y:16});
+      st.querySelectorAll('.a-vine .dr').forEach(function(p, i){ var L = drawable(p);
+        tl.fromTo(p, {strokeDashoffset:L}, {strokeDashoffset:0, duration:(i===0?1.8:0.7), ease:'power1.inOut'}, (i===0?0.5:0.9+i*0.22)); });
+      tl.fromTo(st.querySelectorAll('.a-dots circle'), {opacity:0, scale:0.4, transformOrigin:'50% 50%'}, {opacity:1, scale:1, duration:0.45, ease:IN, stagger:0.08}, 1.3);
+      var s = function(c){ return st.querySelector('.a-sub.' + c); };
+      enter(tl, s('s1'), 1.0, {y:18, d:0.45}); exit(tl, s('s1'), 1.85, 0.3);
+      enter(tl, s('s2'), 2.0, {y:18, d:0.45});
+      tl.fromTo(s('s2').querySelector('.u'), {backgroundSize:'0% 7px'}, {backgroundSize:'100% 7px', duration:0.6, ease:IO}, 2.2);
+      exit(tl, st.querySelector('.a-title'), 2.95); exit(tl, st.querySelector('.a-vine'), 2.95); exit(tl, s('s2'), 2.95);
+      // henna sweep transition
+      var sw = st.querySelector('.a-sweep .sw'); var SL = drawable(sw);
+      tl.fromTo(sw, {strokeDashoffset:SL}, {strokeDashoffset:0, duration:0.75, ease:'power2.in'}, 3.15);
+      tl.call(restart, [v2], 3.55);
+      tl.fromTo(v2, {opacity:0}, {opacity:1, duration:0.4, ease:IO}, 3.6);
+      tl.to(sw, {strokeDashoffset:-SL, duration:0.7, ease:'power2.out'}, 3.9);
+      // info card on clip 2
+      tl.fromTo(st.querySelector('.a-scrim'), {opacity:0}, {opacity:1, duration:0.7, ease:IO}, 4.15);
+      var info = st.querySelector('.a-info');
+      tl.fromTo(info.querySelector('h4'), {clipPath:'inset(0% 100% 0% 0%)', opacity:1}, {clipPath:'inset(0% 0% 0% 0%)', duration:1.1, ease:'power1.inOut'}, 4.3);
+      info.querySelectorAll('.a-row').forEach(function(r, i){ enter(tl, r, 4.9 + i*0.16, {x:-20, y:0, d:0.6}); });
+      tl.fromTo(info.querySelectorAll('.a-row .ic'), {rotation:-90, transformOrigin:'50% 50%'}, {rotation:0, duration:0.9, ease:IN, stagger:0.16}, 4.9);
+      enter(tl, s('s3'), 4.5, {y:18, d:0.45}); exit(tl, s('s3'), 5.9, 0.3);
+      enter(tl, s('s4'), 6.05, {y:18, d:0.45});
+      tl.fromTo(s('s4').querySelector('.u'), {backgroundSize:'0% 7px'}, {backgroundSize:'100% 7px', duration:0.6, ease:IO}, 6.3);
+      exit(tl, info, 7.1); exit(tl, st.querySelector('.a-scrim'), 7.1); exit(tl, s('s4'), 7.1);
+      return tl;
+    },
+
+    B: function(st){
+      var tl = gsap.timeline({repeat:-1, paused:true});
+      var v1 = st.querySelector('.v1'), v2 = st.querySelector('.v2');
+      tl.call(restart, [v1], 0); tl.set(v2, {opacity:0}, 0);
+      veil(tl, st);
+      enter(tl, st.querySelector('.b-mast'), 0.3, {y:30, b:20, d:1.0});
+      tl.fromTo(st.querySelector('.b-rule'), {scaleX:0, opacity:1}, {scaleX:1, duration:0.9, ease:IO}, 0.8);
+      enter(tl, st.querySelector('.b-kick'), 1.0, {y:12, d:0.7});
+      var two = st.querySelector('.b-two');
+      enter(tl, two.querySelector('.l1'), 1.1, {y:20, d:0.6});
+      enter(tl, two.querySelector('.l2'), 1.3, {y:30, b:18, d:0.8});
+      enter(tl, two.querySelector('.l3'), 1.55, {y:20, d:0.6});
+      ['.b-mast','.b-rule','.b-kick','.b-two'].forEach(function(q){ exit(tl, st.querySelector(q), 2.85); });
+      // silk sweep
+      var dx = 0.906, dy = 0.423, D = 2600;
+      tl.fromTo(st.querySelector('.b-silk'), {x:-D*dx, y:-D*dy}, {x:D*dx, y:D*dy, duration:1.6, ease:'power2.inOut'}, 3.0);
+      tl.fromTo(st.querySelector('.b-sheen'), {x:-D*1.2*dx, y:-D*1.2*dy}, {x:D*1.2*dx, y:D*1.2*dy, duration:1.6, ease:'power2.inOut'}, 3.0);
+      tl.call(restart, [v2], 3.75); tl.set(v2, {opacity:1}, 3.8);
+      enter(tl, st.querySelector('.b-num'), 4.4, {y:20, b:24, s:1.06, d:1.0});
+      enter(tl, st.querySelector('.b-numlab'), 4.7, {y:12, d:0.7});
+      enter(tl, st.querySelector('.b-card'), 4.9, {y:40, b:16, d:0.8});
+      st.querySelectorAll('.b-row').forEach(function(r, i){ enter(tl, r, 5.2 + i*0.15, {y:14, b:8, d:0.55}); });
+      ['.b-num','.b-numlab','.b-card'].forEach(function(q){ exit(tl, st.querySelector(q), 7.1); });
+      return tl;
+    },
+
+    C: function(st){
+      // guilloche lines
+      var g = st.querySelector('.c-guil'), ns = 'http://www.w3.org/2000/svg', html = '';
+      for (var k = 0; k < 22; k++){
+        var d = '';
+        for (var x = 0; x <= 1080; x += 6){
+          var u = x/1080*Math.PI*2;
+          var y = 235 + 120*Math.sin(u*3 + k*0.32)*Math.cos(u*0.5 + k*0.18) + 16*Math.sin(x/58 + k*0.9);
+          d += (x ? ' L' : 'M') + x + ' ' + y.toFixed(1);
+        }
+        html += '<path d="' + d + '" fill="none" stroke="rgba(124,94,200,' + (k%3===0 ? .42 : .24) + ')" stroke-width="1.2"/>';
+      }
+      g.innerHTML = html;
+      var tl = gsap.timeline({repeat:-1, paused:true});
+      var v1 = st.querySelector('.v1'), v2 = st.querySelector('.v2'), wrap = st.querySelector('.c-v2');
+      tl.call(restart, [v1], 0);
+      tl.fromTo(wrap, {clipPath:'inset(0px 0px 1920px 0px)'}, {clipPath:'inset(0px 0px 1920px 0px)', duration:0.01}, 0);
+      veil(tl, st);
+      var doc = st.querySelector('.c-doc');
+      tl.fromTo(doc, {y:-480, filter:'blur(12px)', opacity:1}, {y:0, filter:'blur(0px)', duration:1.0, ease:IN}, 0.25);
+      enter(tl, st.querySelector('.c-k'), 0.7, {y:14, d:0.6});
+      enter(tl, st.querySelector('.c-t'), 0.85, {y:20, d:0.7});
+      enter(tl, st.querySelector('.c-n'), 1.05, {y:12, d:0.6});
+      tl.fromTo(st.querySelector('.c-micro'), {xPercent:0}, {xPercent:-12, duration:3, ease:'none'}, 0.2);
+      var seal = st.querySelector('.c-seal');
+      tl.fromTo(seal, {opacity:0, scale:1.14, filter:'blur(10px)'}, {opacity:1, scale:1, filter:'blur(0px)', duration:0.6, ease:'power3.out'}, 1.5);
+      var ck = st.querySelector('.c-check'); var CL = drawable(ck);
+      tl.fromTo(ck, {strokeDashoffset:CL}, {strokeDashoffset:0, duration:0.5, ease:IO}, 1.9);
+      enter(tl, st.querySelector('.c-s1'), 1.0, {y:18, d:0.5});
+      tl.fromTo(st.querySelector('.c-s1 .x'), {'--k':0}, {'--k':1, duration:0.5, ease:IO}, 1.9);
+      tl.to(doc, {y:-60, opacity:0, filter:'blur(10px)', duration:0.5, ease:IO}, 2.95);
+      exit(tl, seal, 2.95); exit(tl, st.querySelector('.c-s1'), 2.95);
+      // UV scan reveal
+      tl.call(restart, [v2], 3.15);
+      tl.fromTo(wrap, {clipPath:'inset(0px 0px 1920px 0px)'}, {clipPath:'inset(0px 0px 0px 0px)', duration:1.3, ease:'power1.inOut'}, 3.2);
+      tl.fromTo(st.querySelector('.c-bar'), {y:-230, opacity:1}, {y:1920, duration:1.3, ease:'power1.inOut'}, 3.08);
+      tl.fromTo(st.querySelector('.c-tint'), {opacity:1}, {opacity:0, duration:0.8, ease:IO}, 4.5);
+      tl.fromTo(st.querySelector('.c-wm'), {opacity:0}, {opacity:0.85, duration:0.5, ease:IO}, 3.45);
+      tl.to(st.querySelector('.c-wm'), {opacity:0, duration:0.7, ease:IO}, 4.5);
+      // route map
+      var rm = st.querySelector('.rm'); var RL = drawable(rm);
+      var path = st.querySelector('.rp'), plane = st.querySelector('.c-plane');
+      var pr = {p:0};
+      var place = function(){ var L = path.getTotalLength(), a = path.getPointAtLength(L*pr.p), b = path.getPointAtLength(Math.min(L, L*pr.p + 2));
+        var ang = Math.atan2(b.y - a.y, b.x - a.x)*180/Math.PI; plane.setAttribute('transform', 'translate(' + a.x + ' ' + a.y + ') rotate(' + ang + ')'); };
+      tl.fromTo(st.querySelectorAll('.c-pa'), {opacity:0}, {opacity:1, duration:0.4, ease:IO}, 4.55);
+      enter(tl, st.querySelector('.c-la'), 4.6, {y:12, d:0.6});
+      tl.fromTo(rm, {strokeDashoffset:RL}, {strokeDashoffset:0, duration:1.3, ease:IO}, 4.75);
+      tl.fromTo(plane, {opacity:0}, {opacity:1, duration:0.3, ease:IO}, 4.75);
+      tl.fromTo(pr, {p:0}, {p:1, duration:1.3, ease:IO, onUpdate:place}, 4.75);
+      tl.fromTo(st.querySelectorAll('.c-pb'), {opacity:0}, {opacity:1, duration:0.4, ease:IO}, 5.9);
+      enter(tl, st.querySelector('.c-lb'), 5.95, {y:12, d:0.6});
+      enter(tl, st.querySelector('.c-km'), 6.1, {y:16, b:12, d:0.7});
+      enter(tl, st.querySelector('.c-s2'), 5.0, {y:18, d:0.5});
+      tl.fromTo(st.querySelector('.c-s2 .m'), {backgroundSize:'0% 100%'}, {backgroundSize:'100% 100%', duration:0.6, ease:IO}, 5.5);
+      ['.c-route','.c-la','.c-lb','.c-km','.c-s2'].forEach(function(q){ exit(tl, st.querySelector(q), 7.1); });
+      gsap.to(st.querySelector('.c-holo'), {rotation:360, duration:9, ease:'none', repeat:-1});
+      gsap.to(st.querySelector('.c-ring'), {rotation:-360, svgOrigin:'140 140', duration:24, ease:'none', repeat:-1});
+      return tl;
+    },
+
+    D: function(st){
+      var tl = gsap.timeline({repeat:-1, paused:true});
+      var v1 = st.querySelector('.v1'), v2 = st.querySelector('.v2');
+      tl.call(restart, [v1], 0);
+      veil(tl, st);
+      var col = st.querySelector('.d-col');
+      tl.fromTo(col, {opacity:0}, {opacity:0, duration:0.01}, 0);
+      enter(tl, st.querySelector('.d-note'), 0.3, {y:40, b:12, r0:-6, r1:-2.5, d:0.8});
+      enter(tl, st.querySelector('.d-tape'), 0.65, {y:-10, b:6, r0:3.5, r1:3.5, s:0.92, d:0.5});
+      tl.fromTo(st.querySelector('.d-h1'), {clipPath:'inset(-10% 100% -10% 0%)'}, {clipPath:'inset(-10% 0% -10% 0%)', duration:1.0, ease:'power1.inOut'}, 0.95);
+      tl.fromTo(st.querySelector('.d-h2'), {clipPath:'inset(-10% 100% -10% 0%)'}, {clipPath:'inset(-10% 0% -10% 0%)', duration:0.8, ease:'power1.inOut'}, 1.95);
+      tl.fromTo(st.querySelector('.d-stamp'), {opacity:0, scale:1.15, rotation:18, filter:'blur(8px)'}, {opacity:0.9, scale:1, rotation:12, filter:'blur(0px)', duration:0.45, ease:'power3.out'}, 2.35);
+      enter(tl, st.querySelector('.d-s1'), 1.25, {y:18, d:0.5});
+      ['.d-note','.d-tape','.d-stamp','.d-s1'].forEach(function(q){ exit(tl, st.querySelector(q), 2.95); });
+      // paper tear (jagged edges top and bottom)
+      var tear = st.querySelector('.d-tear'), pts = [], seed = 7;
+      var rnd = function(){ seed = (seed*9301 + 49297) % 233280; return seed/233280; };
+      for (var x = 0; x <= 1080; x += 36) pts.push(x + 'px ' + (14 + rnd()*30).toFixed(0) + 'px');
+      for (var x2 = 1080; x2 >= 0; x2 -= 36) pts.push(x2 + 'px ' + (2386 - rnd()*30).toFixed(0) + 'px');
+      tear.style.clipPath = 'polygon(' + pts.join(',') + ')';
+      tl.fromTo(tear, {y:1960}, {y:-200, duration:0.75, ease:'power2.in'}, 3.1);
+      tl.call(restart, [v2], 3.8);
+      tl.set(col, {opacity:1}, 3.86);
+      tl.to(tear, {y:-2500, duration:0.85, ease:'power2.out'}, 3.86);
+      enter(tl, st.querySelector('.d-pol'), 4.1, {y:80, b:10, r0:-8, r1:-3, d:0.9});
+      enter(tl, st.querySelector('.d-ptape'), 4.55, {y:-10, b:6, r0:-6, r1:-6, s:0.92, d:0.5});
+      tl.fromTo(st.querySelector('.d-pol .cap'), {clipPath:'inset(-10% 100% -10% 0%)'}, {clipPath:'inset(-10% 0% -10% 0%)', duration:0.9, ease:'power1.inOut'}, 4.75);
+      enter(tl, st.querySelector('.d-pass'), 5.2, {x:300, y:0, b:12, r0:7, r1:2, d:0.9});
+      var mid = st.querySelector('.d-pass .mid'), dot = st.querySelector('.d-pass .dot');
+      tl.fromTo(dot, {x:0}, {x:function(){ return mid.offsetWidth - 26; }, duration:1.0, ease:IO}, 5.85);
+      ['.d-pol','.d-ptape','.d-pass'].forEach(function(q){ exit(tl, st.querySelector(q), 7.1); });
+      tl.to(col, {opacity:0, duration:0.01}, 7.99);
+      return tl;
+    }
+  };
+
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function boot(){
+    document.querySelectorAll('.stage[data-v]').forEach(function(st){
+      var tl; try { tl = builders[st.dataset.v](st); } catch(e){ console.error(e); return; }
+      window.__xsTL = window.__xsTL || {}; window.__xsTL[st.dataset.v] = tl;
+      var vids = st.querySelectorAll('video');
+      if (reduce){ tl.progress(0.3).pause(); return; }
+      var io = new IntersectionObserver(function(es){ es.forEach(function(en){
+        if (en.isIntersecting){ tl.play(); } else { tl.pause(); vids.forEach(function(v){ try{ v.pause(); }catch(e){} }); }
+      }); }, {threshold:0.25});
+      io.observe(st.closest('.phone'));
+    });
+  }
+  var started = false; var go = function(){ if (!started){ started = true; boot(); } };
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(go);
+  setTimeout(go, 2500);
+})();
+</script>
